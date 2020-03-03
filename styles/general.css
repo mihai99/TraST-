@@ -1,0 +1,22 @@
+p {
+    margin:0;
+}
+button.main-button {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background: yellow;
+    border: 2px solid #FF9800;
+    box-shadow: 2px 2px #88888875;
+    margin-bottom: 15px;
+    font-size: larger;
+    font-weight: 700;
+    transition: 0.1s all ease-in;
+    color: #5e3800;
+    font-size: larger;
+    font-weight: 700;
+}
+button.main-button:hover {
+    background-color: #FFEB3B;
+}

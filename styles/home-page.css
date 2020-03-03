@@ -1,0 +1,53 @@
+.content {
+    display: flex;
+}
+.content .gallery {
+        width: 40%;
+        margin: 5px;
+}
+.content .gallery img {
+    width: 100%;
+    border-radius: 5px;
+}
+.content .about {
+    width: 60%;
+    display: flex;
+    padding-left: 15px;
+    background: #5fd4e38a;
+    margin: 5px;
+    border-radius: 5px;
+}
+.content .description {
+    margin-top:10px;
+}
+.content .about p {
+    font-size: 24px;
+    text-align: justify;
+    margin-top:8px;
+}
+
+.highscores-container {
+    margin:10px;
+}
+.highscores-container .highscores {
+ 
+    padding: 10px;
+    width:240px;
+}
+.highscores-container .highscores p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    width: 100%;
+}
+table tr:nth-child(even) {
+    background-color: #67d0fe;
+  }
+table td, table th {
+    border: 1px solid #67d0fe;
+    text-align: center;
+    padding: 2px 8px;
+}
