@@ -1,16 +1,16 @@
-.content {
+body {
     display: flex;
 }
-.content .gallery {
+.gallery {
         width: 30%;
         margin: 5px;
 }
-.content .gallery img {
+.gallery img {
     width: 100%;
     border-radius: 5px;
     max-height: 450px;
 }
-.content .about {
+.about {
     width: 70%;
     display: flex;
     padding-left: 15px;
@@ -19,11 +19,11 @@
     border-radius: 5px;
     height: fit-content;
 }
-.content .description {
+.description {
     margin-top:10px;
     padding: 40px;
 }
-.content .about p {
+.about p {
     font-size: 24px;
     text-align: justify;
     margin-top:8px;

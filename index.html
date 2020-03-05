@@ -1,103 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles/general.css">
-    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
-    <link rel="stylesheet" type="text/css" href="styles/footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/home-page.css">
-    <title>TRuST</title>
-  </head>
-  <body>
-    <nav>
-      nav
-    </nav>
-    <div class="content">
-      <div class="about">
-        <div class="description">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At mollitia harum quaerat quae repellendus ratione distinctio aut ea aliquam asperiores nisi provident blanditiis cupiditate illo vitae, architecto tempore expedita laborum?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate natus, minus at ex, adipisci laborum sed, atque perferendis aut quam. Odio, omnis. Aliquid beatae doloribus, excepturi hic magnam dolorum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, a voluptates sit nobis, mollitia commodi et iste fugiat quisquam repellat, illum incidunt natus dolorum quos consequatur ipsa ipsam quod ducimus?
-          </p>
-          <button class="main-button">Get Started</button>
-        </div>
-        <div class="highscores-container">
-        <div class="highscores">
-          <p>Highscores</p>
-          <table>
-            <tr>
-              <th>Rank</th>
-              <th>Name</th>
-              <th>Score</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Maria Anders</td>
-              <td>567</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Francisco Chang</td>
-              <td>456</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Roland Mendel</td>
-              <td>345</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Helen Bennett</td>
-              <td>234K</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Yoshi Tannamuri</td>
-              <td>123</td>
-            </tr>
-           
-            <tr>
-              <td>6</td>
-              <td>Maria Anders</td>
-              <td>567</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Francisco Chang</td>
-              <td>456</td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>Roland Mendel</td>
-              <td>345</td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>Helen Bennett</td>
-              <td>234K</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>Yoshi Tannamuri</td>
-              <td>123</td>
-            </tr>
-          </table>
-        </div>
-        </div>
-      </div>
-      <div class="gallery">
-        <img src="images/main-image.jpg" alt="">
 
-</div>
-    </div>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles/general.css">
+  <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+  <link rel="stylesheet" type="text/css" href="styles/footer.css">
+  <script src="./javascript/page-loaders.js"></script>
+  <title>TRaST</title>
+</head>
+
+<body onresize="adjustContentHeight()">
+  <nav>
+    nav
+  </nav>
+  <iframe id="content" src="./pages/homepage.html" allowfullscreen frameborder="0" scrolling="no" style="width: 100%;" onload="adjustContentHeight()"></iframe>
+
   <footer class="site-footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <h6>About</h6>
           <p class="text-de-scris">bla bla bla</p>
-
         </div>
         <h6>Echipa de proiect:</h6>
         <ul class="footer-links">
@@ -110,7 +34,6 @@
         <h6>Facebook Links</h6>
         <ul class="footer-links">
           <li>
-
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
               class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512">
@@ -136,10 +59,7 @@
               </path>
             </svg>
             <a href="https://www.facebook.com/mihai.blaga.963">Blaga Mihai-Andrei</a></li>
-
         </ul>
-
-
       </div>
     </div>
     <hr>
@@ -160,4 +80,7 @@
   </footer>
 </body>
 
+<script>
+  loadHomepage();
+  </script>
 </html>
