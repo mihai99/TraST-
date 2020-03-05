@@ -11,10 +11,30 @@
 </head>
 
 <body onresize="adjustContentHeight()">
-  <nav>
-    nav
+  <nav class="main-nav">
+    <div class="nav-img">
+      <img src="download.png" alt="">
+    </div>
+
+    <div class="nav-btns">
+      <a href="invatare">Mediu de invatare</a>
+      <a href="chestionare">Chestionare</a>
+      <a href="clasament">Clasament</a>
+    </div>
+
+    <div class="settings-btns">
+      <div class="login-btn">
+        <button type="button" name="button">Login</button>
+      </div>
+
+      <div class="lng-btn">
+        <button type="button" name="button">language</button>
+      </div>
+    </div>
+
   </nav>
-  <iframe id="content" src="./pages/homepage.html" allowfullscreen frameborder="0" scrolling="no" style="width: 100%;" onload="adjustContentHeight()"></iframe>
+  <iframe id="content" src="./pages/homepage.html" allowfullscreen frameborder="0" scrolling="no" style="width: 100%;"
+    onload="adjustContentHeight()"></iframe>
 
   <footer class="site-footer">
     <div class="container">
@@ -82,5 +102,6 @@
 
 <script>
   loadHomepage();
-  </script>
+</script>
+
 </html>
