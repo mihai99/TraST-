@@ -1,44 +1,41 @@
-.main-nav {
-  position: relative;
+.topnav {
+  position: sticky;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   display: flex;
+  height: 100px;
   background-color: #2f3542;
   text-decoration: none;
+  overflow: hidden;
 }
 
-.nav-img {
-  width: 25%;
-  height: auto;
+.topnav .logo {
+  line-height: 100px;
+  float: left;
+  color: white;
+  margin-left: 30px;
 }
 
-.nav-btns {
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  display: inline-flex;
+.topnav .nav-btns {
+  float: right;
 }
 
-.nav-btns a {
+.topnav .nav-btns a {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
-  height: inherit;
   padding: 14px 16px;
   margin: auto;
   border: 1px solid #ced6e0;
   transition: 0.3s;
 }
 
-.nav-btns a:hover {
+.topnav .nav-btns a:hover {
   background-color: #57606f;
+  border-color: #00cec9;
+  transform: scale(1.1);
   transition: 0.3s;
 }
-
-.settings-btns {
-  background-color: blue;
-  width: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.topnav .nav-active{
+  background-color: #00b894;
 }

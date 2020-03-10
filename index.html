@@ -6,35 +6,32 @@
   <link rel="stylesheet" type="text/css" href="styles/general.css">
   <link rel="stylesheet" type="text/css" href="styles/navbar.css">
   <link rel="stylesheet" type="text/css" href="styles/footer.css">
+  <script src="https://kit.fontawesome.com/a03919215d.js" crossorigin="anonymous"></script>
   <script src="./javascript/page-loaders.js"></script>
   <title>TRaST</title>
 </head>
 
 <body onresize="adjustContentHeight()">
-  <nav class="main-nav">
-    <div class="nav-img">
-      <img src="download.png" alt="">
-    </div>
+  <nav class="topnav">
+    <h1 class="logo">TraST</h1>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
 
-    <div class="nav-btns">
-      <a href="invatare">Mediu de invatare</a>
+    <ul class="nav-btns">
+      <a href="invatare" class="nav-active">Mediu de invatare</a>
       <a href="chestionare">Chestionare</a>
       <a href="clasament">Clasament</a>
-    </div>
-
-    <div class="settings-btns">
-      <div class="login-btn">
-        <button type="button" name="button">Login</button>
-      </div>
-
-      <div class="lng-btn">
-        <button type="button" name="button">language</button>
-      </div>
-    </div>
+      <a href="login">Login</a>
+      <a href="lang">Language</a>
+      <label for="chk">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
 
   </nav>
-  <iframe id="content" src="./pages/homepage.html" allowfullscreen frameborder="0" scrolling="no" style="width: 100%;"
-    onload="adjustContentHeight()"></iframe>
+  <iframe id="content" src="./pages/homepage.html" allowfullscreen frameborder="0" scrolling="no" style="width: 100%;" onload="adjustContentHeight()"></iframe>
 
   <footer class="site-footer">
     <div class="container">
@@ -54,26 +51,20 @@
         <h6>Facebook Links</h6>
         <ul class="footer-links">
           <li>
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
-              class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path fill="currentColor"
                 d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
               </path>
             </svg><a href="https://www.facebook.com/curlea.catalin.9">Curlea Catalin-George</a></li>
           <li>
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
-              class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path fill="currentColor"
                 d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
               </path>
             </svg>
             <a href="https://www.facebook.com/ciubotariu.vlad99">Ciubotariu Vlad-Calin</a></li>
           <li>
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
-              class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path fill="currentColor"
                 d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
               </path>
