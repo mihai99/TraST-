@@ -1,13 +1,7 @@
-
 .topnav {
-  position: sticky;
-  margin: 0;
-  padding: 0 20px;
-  display: flex;
   height: 100px;
   background-color: #2f3542;
-  text-decoration: none;
-  overflow: hidden;
+  padding: 0 10px;
 }
 
 .topnav .logo {
@@ -20,26 +14,91 @@
   width: 232px;
   padding: 24px;
 }
-.topnav .nav-btns {
+
+.nav-btns {
+  float: right;
+  line-height: 100px;
+}
+
+.nav-btns a {
+  color: #dfe6e9;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 20px;
+  border: 1px solid #dfe6e9;
+  transition: 0.4s;
+}
+
+.show-menu-btn, .hide-menu-btn {
+  transition: 0.4s;
+  cursor: pointer;
+  display: none;
+  color: #dfe6e9;
+  font-size: 30px;
+}
+
+.show-menu-btn {
   float: right;
 }
 
-.topnav .nav-btns a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  padding: 14px 16px;
-  margin: auto;
-  border: 1px solid #ced6e0;
-  transition: 0.3s;
+.show-menu-btn i {
+  line-height: 100px;
 }
 
-.topnav .nav-btns a:hover {
-  background-color: #57606f;
-  border-color: #00cec9;
-  transform: scale(1.1);
-  transition: 0.3s;
+.nav-btns a:hover, .show-menu-btn:hover, .hide-menu-btn:hover {
+  color: #74b9ff;
+  border-color: #74b9ff;
+  transition: 0.4s;
 }
-.topnav .nav-active{
-  background-color: #00b894;
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+
+@media screen and (max-width:1200px) {
+
+
+  .nav-btns a {
+    margin: 0;
+  }
+
+  
+}
+
+@media screen and (max-width:1000px) {
+  .show-menu-btn, .hide-menu-btn {
+    display: block;
+  }
+
+  .nav-btns {
+    right: -100%;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    text-align: center;
+    line-height: normal;
+    top: 0;
+    transition: 0.7s;
+  }
+
+  .nav-btns a {
+    display: block;
+    border: none;
+    padding: 50px 0;
+  }
+
+  .hide-menu-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  #chk:checked~.nav-btns {
+    right: 0;
+  }
 }
