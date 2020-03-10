@@ -1,0 +1,59 @@
+body {
+    display: flex;
+}
+.gallery {
+        width: 30%;
+        margin: 5px;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+    max-height: 450px;
+}
+.about {
+    width: 70%;
+    display: flex;
+    padding-left: 15px;
+    background: #5fd4e38a;
+    margin: 5px;
+    border-radius: 5px;
+    height: fit-content;
+}
+.description {
+    margin-top:10px;
+    padding: 40px;
+}
+.about p {
+    font-size: 24px;
+    text-align: justify;
+    margin-top:8px;
+}
+
+.highscores-container {
+    margin:10px;
+}
+.highscores-container .highscores {
+ 
+    padding: 10px;
+    width:240px;
+}
+.highscores-container .highscores p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    width: 100%;
+}
+table tr:nth-child(even) {
+    background-color: #67d0fe;
+  }
+table td, table th {
+    border: 1px solid #67d0fe;
+    text-align: center;
+    padding: 2px 8px;
+}
+.description .main-button {
+    margin-top: 40px;
+}

@@ -1,0 +1,42 @@
+
+.topnav {
+  position: sticky;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  height: 100px;
+  background-color: #2f3542;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.topnav .logo {
+  line-height: 100px;
+  float: left;
+  color: white;
+  margin-left: 30px;
+}
+
+.topnav .nav-btns {
+  float: right;
+}
+
+.topnav .nav-btns a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 14px 16px;
+  margin: auto;
+  border: 1px solid #ced6e0;
+  transition: 0.3s;
+}
+
+.topnav .nav-btns a:hover {
+  background-color: #57606f;
+  border-color: #00cec9;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.topnav .nav-active{
+  background-color: #00b894;
+}
