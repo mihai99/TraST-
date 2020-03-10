@@ -6,8 +6,10 @@
   <link rel="stylesheet" type="text/css" href="styles/general.css">
   <link rel="stylesheet" type="text/css" href="styles/navbar.css">
   <link rel="stylesheet" type="text/css" href="styles/footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/login-modal.css">
   <script src="https://kit.fontawesome.com/a03919215d.js" crossorigin="anonymous"></script>
   <script src="./javascript/page-loaders.js"></script>
+  <script src="./javascript/modal-handler.js"></script>
   <title>TRaST</title>
 </head>
 
@@ -25,7 +27,7 @@
       <a href="invatare" class="nav-active">Mediu de invatare</a>
       <a href="chestionare">Chestionare</a>
       <a href="clasament">Clasament</a>
-      <a href="login">Login</a>
+      <a href="#" onclick="openBackground()">Login</a>
       <a href="lang">Language</a>
       <label for="chk">
         <i class="fas fa-times"></i>
@@ -91,7 +93,10 @@
       </div>
     </div>
   </footer>
-  <div class="login-modal">login</div>
+  <div id="modal-background" onclick="closeBackground()">
+    <div class="login-modal">login</div>
+
+  </div>
 </body>
 
 <script>

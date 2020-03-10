@@ -26,3 +26,13 @@ button.main-button {
 button.main-button:hover {
   background-color: #FFEB3B;
 }
+#modal-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #62626285;
+  display: none;
+  top: 0;
+  left: 0;
+  
+}
