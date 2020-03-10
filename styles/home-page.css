@@ -57,3 +57,25 @@ table td, table th {
 .description .main-button {
     margin-top: 40px;
 }
+
+@media screen and (max-width:800px) {
+    body {
+        flex-direction: column-reverse;
+    }
+    .gallery {
+        width: calc(100% - 10px);
+    } 
+    .description {
+        padding: 10px;
+    }
+    .description p {
+        font-size: 16px;
+    }
+    .about {
+        width: calc(100% - 10px);
+        padding-left: 0;
+    } 
+    .highscores {
+        padding: 0;
+    }
+  }
