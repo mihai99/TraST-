@@ -13,7 +13,9 @@
 
 <body onresize="adjustContentHeight()">
   <nav class="topnav">
-    <img src="images/cover.png" class="logo">
+    <a href = "./pages/homepage.html" target="content">
+       <img src="images/cover.png" class="logo">
+    </a>
     <input type="checkbox" id="chk">
     <label for="chk" class="show-menu-btn">
       <i class="fas fa-bars"></i>
@@ -31,7 +33,7 @@
     </ul>
 
   </nav>
-  <iframe id="content" src="./pages/homepage.html" allowfullscreen frameborder="0" scrolling="no" style="width: 100%;" onload="adjustContentHeight()"></iframe>
+  <iframe id="content" name="content" src="./pages/homepage.html" allowfullscreen frameborder="0" scrolling="no" style="width: 100%;" onload="adjustContentHeight()"></iframe>
 
   <footer class="site-footer">
     <div class="container">
@@ -89,11 +91,10 @@
       </div>
     </div>
   </footer>
-  <div class="login-modal"></div>
+  <div class="login-modal">login</div>
 </body>
 
 <script>
-  loadHomepage();
 </script>
 
 </html>
