@@ -16,50 +16,51 @@
   line-height: 100px;
 }
 
-.nav-btns a{
+.nav-btns a {
   color: #dfe6e9;
   font-size: 20px;
   text-decoration: none;
   padding: 10px;
-  margin: 20px;
+  margin: 0 20px;
   border: 1px solid #dfe6e9;
   transition: 0.4s;
 }
 
-.show-menu-btn, .hide-menu-btn{
-    transition: 0.4s;
-    cursor: pointer;
-    display: none;
-      color: #dfe6e9;
-      font-size: 30px;    
+.show-menu-btn, .hide-menu-btn {
+  transition: 0.4s;
+  cursor: pointer;
+  display: none;
+  color: #dfe6e9;
+  font-size: 30px;
 }
 
-.show-menu-btn{
+.show-menu-btn {
   float: right;
 }
 
-.show-menu-btn i{
+.show-menu-btn i {
   line-height: 100px;
 }
 
-.nav-btns a:hover, .show-menu-btn:hover, .hide-menu-btn:hover{
+.nav-btns a:hover, .show-menu-btn:hover, .hide-menu-btn:hover {
   color: #74b9ff;
   border-color: #74b9ff;
   transition: 0.4s;
 }
 
-#chk{
+#chk {
   position: absolute;
   visibility: hidden;
   z-index: -1111;
 }
 
-@media screen and (max-width:1000px){
-  .show-menu-btn, .hide-menu-btn{
+
+@media screen and (max-width:1000px) {
+  .show-menu-btn, .hide-menu-btn {
     display: block;
   }
 
-  .nav-btns{
+  .nav-btns {
     right: -100%;
     position: fixed;
     width: 100%;
@@ -70,20 +71,20 @@
     top: 0;
     transition: 0.7s;
   }
-  .nav-btns a{
+
+  .nav-btns a {
     display: block;
     border: none;
     padding: 50px 0;
   }
 
-  .hide-menu-btn{
+  .hide-menu-btn {
     position: absolute;
     top: 40px;
     right: 40px;
   }
 
-  #chk:checked ~ .nav-btns{
+  #chk:checked~.nav-btns {
     right: 0;
   }
-
 }
