@@ -35,6 +35,27 @@ button.main-button {
 button.main-button:hover {
   background-color: #FFEB3B;
 }
+.secondary-button {
+   width: 50%;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: #ffc451;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #7f6300;
+    box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.75);
+    transition: 0.1s all ease-in;
+    min-width: 150px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondary-button:hover {
+  background-color: #FFEB3B;
+}
 #modal-background {
   position: fixed;
   width: 100%;
