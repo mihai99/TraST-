@@ -1,11 +1,14 @@
 .topnav {
   height: 100px;
   background-color: #2f3542;
-  padding: 0 10px;
   position: sticky;
   top:0;
+  display: flex;
+  justify-content: space-between;
 }
-
+a {
+  margin-left: -30px;
+}
 .topnav .logo {
   line-height: 100px;
   float: left;
@@ -42,6 +45,7 @@
 
 .show-menu-btn {
   float: right;
+  margin-right: 20px;
 }
 
 .show-menu-btn i {
@@ -99,6 +103,6 @@
   }
 
   #chk:checked~.nav-btns {
-    right: 0;
+    right: 20;
   }
 }

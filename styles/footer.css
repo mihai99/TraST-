@@ -1,6 +1,6 @@
 .site-footer
 {
-    background-color: black;
+    background-color: #2f3542;
     padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
@@ -65,32 +65,19 @@ a:focus,.footer-links a:hover
     text-decoration: none;
 }
 
-
 .footer-links.inline li
 {
     display: flex ;
 }
+
 .copyright-text
 {
   margin:0;
   text-align: center;
   width: 100%;
 }
-@media (max-width:991px)
+
+li a:last-child
 {
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text
-  {
-    text-align:center
-  }
+  margin-left: 16px;
 }

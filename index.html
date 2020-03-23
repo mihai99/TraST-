@@ -15,14 +15,13 @@
 
 <body onresize="adjustContentHeight()">
   <nav class="topnav">
-    <a href = "./pages/homepage.html" target="content">
-       <img src="images/cover.png" class="logo">
+    <a href="./pages/homepage.html" target="content">
+      <img src="images/cover.png" class="logo">
     </a>
     <input type="checkbox" id="chk">
     <label for="chk" class="show-menu-btn">
       <i class="fas fa-bars"></i>
     </label>
-
     <ul class="nav-btns">
       <a href="invatare" class="nav-active">Mediu de invatare</a>
       <a href="chestionare">Chestionare</a>
@@ -33,10 +32,11 @@
         <i class="fas fa-times"></i>
       </label>
     </ul>
-
   </nav>
-  <iframe id="content" name="content" src="./pages/homepage.html" allowfullscreen frameborder="0" scrolling="no" style="width: 100%;" onload="adjustContentHeight()"></iframe>
+
+  <iframe id="content" name="content" src="./pages/homepage.html" allowfullscreen frameborder="0" scrolling="no" onload="adjustContentHeight()"></iframe>
   <footer class="site-footer">
+
     <div class="row">
       <h1 Links:></h1>
       <ul class="footer-links">
@@ -74,26 +74,19 @@
 
           </a>
           <a href="mailto:mihaiblaga_99@yahoo.com">Blaga Mihai-Andrei </a></li>
-
       </ul>
-
     </div>
     </div>
     </div>
-
     </div>
     <div class="container">
-          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by us
-          </p>
+      <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by us
+      </p>
     </div>
   </footer>
   <div id="modal-background" onclick="closeBackground()">
     <div class="login-modal">login</div>
-
   </div>
 </body>
-
-<script>
-</script>
 
 </html>

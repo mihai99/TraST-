@@ -1,5 +1,8 @@
 body {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: none;
 }
 .gallery {
         width: 30%;
@@ -14,14 +17,14 @@ body {
     width: 70%;
     display: flex;
     padding-left: 15px;
-    background: #5fd4e38a;
+    background:#fff5b3;
     margin: 5px;
     border-radius: 5px;
     height: fit-content;
 }
 .description {
     margin-top:10px;
-    padding: 40px;
+    padding: 40px 20px 40px 20px;
 }
 .about p {
     font-size: 24px;
@@ -30,27 +33,23 @@ body {
 }
 
 .highscores-container {
-    margin:10px;
+    margin: 20px 20px 0px 0px;
 }
 .highscores-container .highscores {
- 
-    padding: 10px;
-    width:240px;
+    width:250px;
 }
 .highscores-container .highscores p {
     margin-bottom: 10px;
     text-align: center;
 }
-table {
-    width: 100%;
+table {   
     border-collapse: collapse;
-    width: 100%;
 }
 table tr:nth-child(even) {
-    background-color: #67d0fe;
+    background-color: #ffe11b;
   }
 table td, table th {
-    border: 1px solid #67d0fe;
+    border: 1px solid #ffe11b;
     text-align: center;
     padding: 2px 8px;
 }
@@ -58,7 +57,7 @@ table td, table th {
     margin-top: 40px;
 }
 
-@media screen and (max-width:800px) {
+@media (max-width:800px) {
     body {
         flex-direction: column-reverse;
     }
@@ -78,4 +77,27 @@ table td, table th {
     .highscores {
         padding: 0;
     }
+  }
+
+  @media (max-width:600px)
+  {
+      .about {
+        display: flex;
+        flex-direction: column;
+      }
+      .highscores {
+            width: 80% !important;
+            margin: 10%;
+      }
+      .highscores-container {
+          margin: 0;
+      }
+      table {
+          width:100%;
+      }
+      .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
   }
