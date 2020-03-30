@@ -17,7 +17,7 @@ p {
   margin: 0;
 }
 
-button.main-button {
+.main-button {
   width: 200px;
   height: 40px;
   border-radius: 15px;
@@ -32,7 +32,7 @@ button.main-button {
   font-weight: 700;
 }
 
-button.main-button:hover {
+.main-button:hover {
   background-color: #FFEB3B;
 }
 .secondary-button {

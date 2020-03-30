@@ -4,7 +4,7 @@ body {
     background: none;
 }
 .row {   
-     width: 100%;    
+    width: 100%;    
     margin-top:20px;
 }
 .first {
@@ -21,6 +21,7 @@ body {
     border-radius: 5px;
     max-height: 450px;
 }
+
 .about {
     background:#fff5b3;
     width: 70%;
