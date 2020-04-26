@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="icon" href="./favicon.ico" type="image/ico">
   <link rel="stylesheet" type="text/css" href="styles/general.css">
   <link rel="stylesheet" type="text/css" href="styles/navbar.css">
   <link rel="stylesheet" type="text/css" href="styles/footer.css">
   <link rel="stylesheet" type="text/css" href="styles/login-modal.css">
   <script src="https://kit.fontawesome.com/a03919215d.js" crossorigin="anonymous"></script>
-  <script src="./javascript/page-loaders.js"></script>
+  <script src="./javascript/page-loaders-utils.js"></script>
   <script src="./javascript/modal-handler.js"></script>
+  <script src="./javascript/menu-handler.js"></script>
   <title>TRaST</title>
 </head>
 
@@ -19,22 +21,22 @@
       <img src="images/cover.png" class="logo">
     </a>
     <input type="checkbox" id="chk">
-    <label for="chk" class="show-menu-btn">
+    <label for="chk" class="show-menu-btn" onclick="openMobileMenu()">
       <i class="fas fa-bars"></i>
     </label>
     <ul class="nav-btns">
       <a href="invatare" class="nav-active">Mediu de invatare</a>
-      <a href="chestionare">Chestionare</a>
+      <a href="./pages/tests/tests-selector.html" target="content">Chestionare</a>
       <a href="clasament">Clasament</a>
       <a href="#" onclick="openBackground()">Login</a>
       <a href="lang">Language</a>
-      <label for="chk" class="hide-menu-btn">
+      <label for="chk" class="hide-menu-btn" onclick="closeMobileMenu()">
         <i class="fas fa-times"></i>
       </label>
     </ul>
   </nav>
 
-  <iframe id="content" name="content" src="./pages/homepage.html" allowfullscreen frameborder="0" scrolling="no" onload="adjustContentHeight()"></iframe>
+  <iframe id="content" name="content" src="./pages/homepage.html" allowfullscreen frameborder="0" scrolling="no" onload="adjustContentHeight();closeMobileMenu();"></iframe>
   <footer class="site-footer">
 
     <div class="row">
