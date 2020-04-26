@@ -30,6 +30,7 @@ p {
   color: #5e3800;
   font-size: larger;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .main-button:hover {
@@ -52,6 +53,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .secondary-button:hover {
   background-color: #FFEB3B;

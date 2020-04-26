@@ -1,0 +1,59 @@
+body {
+    background:none;
+}
+.container {
+    width: 100%;
+  
+    margin-top: 100px;
+    background: #fff5b3;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #00bd00;
+    margin-top: 50px;
+}
+.subtitle {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+    font-weight: 800;
+}
+.score {
+    font-size: 24px;
+    text-align: center;
+    color: green;
+    font-weight: 800;
+}
+.buttons {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    min-width: 250px;
+    min-height: 50px;
+}
+.strong-green {
+    color: green;
+}
+.light-green {
+    color: #00bd00;
+}
+.strong-red {
+    color:red;
+}
+.light-red {
+    color:#ff4b4b;
+}
