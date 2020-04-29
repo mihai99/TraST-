@@ -3,8 +3,8 @@ body {
     flex-direction: column;
     background: none;
 }
-.row {   
-    width: 100%;    
+.row {
+    width: 100%;
     margin-top:20px;
 }
 .first {
@@ -26,7 +26,7 @@ body {
     background:#fff5b3;
     width: 70%;
     display: flex;
-    padding-left: 15px;   
+    padding-left: 15px;
     margin: 5px;
     border-radius: 5px;
     height: fit-content;
@@ -45,13 +45,15 @@ body {
     margin: 20px 20px 0px 0px;
 }
 .highscores-container .highscores {
-    width:250px;
+
+    padding: 10px;
+    width:240px;
 }
 .highscores-container .highscores p {
     margin-bottom: 10px;
     text-align: center;
 }
-table {   
+table {
     border-collapse: collapse;
 }
 table tr:nth-child(even) {
@@ -63,6 +65,7 @@ table td, table th {
     padding: 2px 8px;
 }
 .description .main-button {
+  cursor: pointer;
     margin-top: 40px;
 }
 .articles {
@@ -70,7 +73,7 @@ table td, table th {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.articles h3 {    
+.articles h3 {
     width: 100%;
     padding: 20px;
     font-size: 26px;
@@ -124,7 +127,7 @@ article .secondary-button {
     .hide-md {
         display: none;
     }
-   
+
 }
 
 @media (max-width:800px) {
@@ -133,7 +136,7 @@ article .secondary-button {
     }
     .gallery {
         width: calc(100% - 10px);
-    } 
+    }
     .description {
         padding: 10px;
     }
@@ -143,7 +146,7 @@ article .secondary-button {
     .about {
         width: calc(100% - 10px);
         padding-left: 0;
-    } 
+    }
     .highscores {
         padding: 0;
     }
