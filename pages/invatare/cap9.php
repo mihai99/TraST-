@@ -10,12 +10,13 @@
     <body>
         <div class="body-wrapper">
             <div class="cap-nav">
-                <a href="cap2.php" id="prev">Capitolul 2</a>
-                <a href="../m_invatare.html" id="home">CAPITOLUL III: Conducătorii de vehicule</a>
-                <a href="cap4.php" id="next">Capitolul 4</a>
+                <a href="cap8.php" id="prev">Capitolul 8</a>
+                <a href="../m_invatare.html" id="home">CAPITOLUL IX: Atribuții ale unor ministere și ale altor
+                    autorități ale administrației publice</a>
+                <a href="cap10.php" id="next">Capitolul 10</a>
             </div>
             <?php
-            include_once "cap3.html";
+            include_once "cap9.html";
             ?>
         </div>
     </body>

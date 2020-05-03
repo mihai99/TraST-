@@ -15,7 +15,7 @@
                 <a href="cap2.php" id="next">Capitolul 2</a>
             </div>
             <?php
-            include "cap1.html";
+            include_once "cap1.html";
             ?>
         </div>
     </body>
