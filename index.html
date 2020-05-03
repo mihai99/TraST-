@@ -12,6 +12,7 @@
         <script src="./javascript/page-loaders-utils.js"></script>
         <script src="./javascript/modal-handler.js"></script>
         <script src="./javascript/menu-handler.js"></script>
+        <script src="./javascript/cookies.js"></script>
         <title>TRaST</title>
     </head>
 
@@ -36,12 +37,11 @@
             </ul>
         </nav>
 
-        <iframe id="content" name="content" src="./pages/homepage.html" allowfullscreen frameborder="0" scrolling="no"
-                onload="adjustContentHeight();closeMobileMenu();"></iframe>
+        <iframe id="content" name="content" allowfullscreen frameborder="0" scrolling="no"
+                onload="adjustContentHeight();closeMobileMenu();scrollToTop()"></iframe>
         <footer class="site-footer">
 
             <div class="row">
-                <h1>Links:</h1>
                 <ul class="footer-links">
                     <li>
                         <a href="https://www.facebook.com/curlea.catalin.9/">
@@ -93,6 +93,21 @@
         <div id="modal-background" onclick="closeBackground()">
             <div class="login-modal">login</div>
         </div>
+        <script>
+          var iframeContent = document.getElementById("content").contentWindow.location.href;
+            window.onbeforeunload =  function() {
+              iframeContent = document.getElementById("content").contentWindow.location.href;     
+              setCookie("loadedPage", iframeContent, 1);     
+            }
+            window.onload = function() {
+              var iframePage =  getCookie("loadedPage");
+              if(!iframePage || iframePage == "") {
+                document.getElementById('content').src = "./pages/homepage.html";
+              } else {
+                document.getElementById('content').src = getCookie("loadedPage");                
+              }           
+            }
+        </script>
     </body>
 
 </html>

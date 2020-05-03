@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="../../styles/invatare/legislatie.css">
     </head>
 
-    <body>
+    <body  style="background:none">
         <div class="body-wrapper">
             <div class="cap-nav">
                 <a href="cap2.php" id="prev">Capitolul 2</a>
