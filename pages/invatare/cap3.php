@@ -10,9 +10,9 @@
     <body>
         <div class="body-wrapper">
             <div class="cap-nav">
-                <a href="cap2.html" id="prev">Capitolul 2</a>
+                <a href="cap2.php" id="prev">Capitolul 2</a>
                 <a href="../m_invatare.html" id="home">CAPITOLUL III: Conducătorii de vehicule</a>
-                <a href="cap4.html" id="next">Capitolul 4</a>
+                <a href="cap4.php" id="next">Capitolul 4</a>
             </div>
             <div class="content-container">
                 <div class="article">

@@ -10,7 +10,7 @@
     <body>
         <div class="body-wrapper">
             <div class="cap-nav">
-                <a href="cap3.html" id="prev">Capitolul 3</a>
+                <a href="cap3.php" id="prev">Capitolul 3</a>
                 <a href="../m_invatare.html" id="home">CAPITOLUL IV: Semnalizarea rutieră</a>
                 <a href="cap5.html" id="next">Capitolul 5</a>
             </div>
