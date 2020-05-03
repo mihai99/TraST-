@@ -70,11 +70,9 @@ body {
 }
 .answer {
     display: flex;
-    background: aliceblue;
     width: 100%;
     height: 90px;
     background: #ffe092d4;
-    width: 100%;
     border-radius: 10px;
 }
 img.question-image {
