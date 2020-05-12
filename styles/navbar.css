@@ -39,6 +39,10 @@ a {
     transition: 0.4s;
 }
 
+.nav-btns li {
+    display: inline;
+}
+
 .show-menu-btn, .hide-menu-btn {
     transition: 0.4s;
     cursor: pointer;

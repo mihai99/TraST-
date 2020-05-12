@@ -18,54 +18,9 @@
                         <th>Username</th>
                         <th>Chestionare rezolvate</th>
                     </tr>
-                    <tr>
-                        <td>Dummy</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Dummy</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Dummy</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Dummy</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Dummy</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Dummy</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Dummy</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Dummy</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Dummy</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Dummy</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Dummy</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Dummy</td>
-                        <td>100</td>
-                    </tr>
+                    <?php
+                        inc
+                    ?>
                 </table>
             </div>
             <div class="right-table">
