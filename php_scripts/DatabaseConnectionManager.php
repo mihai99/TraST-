@@ -7,7 +7,7 @@
         public static function get_conn()
         {
             if (is_null(self::$conn)) {
-                self::$conn = new PDO('mysql:host=localhost;dbname=test', 'root');
+                self::$conn = new PDO('mysql:host=localhost;dbname=trast', 'root');
             }
             return self::$conn;
         }

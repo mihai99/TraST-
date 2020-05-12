@@ -12,6 +12,7 @@
         <script src="./javascript/page-loaders-utils.js"></script>
         <script src="./javascript/modal-handler.js"></script>
         <script src="./javascript/menu-handler.js"></script>
+        <script src="./javascript/ajax/account-handler.js"></script>
         <script src="./javascript/cookies.js"></script>
         <title>TRaST</title>
     </head>
@@ -88,9 +89,62 @@
             </div>
         </footer>
         <div id="modal-background" onclick="closeBackground()">
-            <div class="login-modal">login</div>
+            <div class="inputs-modal" id="login-modal" onclick="shopClickPropagation(event, this)">
+                <div class="close" onclick="closeBackground()">x</div>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label for="username-login">Username:</label>
+                        <input id = "username-login" type="text" class="input">
+                    </div>
+                    <div class="input-group">
+                        <label for="password-login">Password:</label>
+                        <input id = "password-login" type="password" class="input">
+                    </div>
+                </div>
+                <div id="login-response"></div>
+                  
+                <div class="buttons">
+                    <button class="main-button" onclick="showRegisterModal()">Register</button>
+                    <button class="main-button" onclick="login()">Login</button>
+                </div>
+            </div>
+            <div class="inputs-modal" id="register-modal" onclick="shopClickPropagation(event, this)">
+                <div class="close" onclick="closeBackground()">x</div>
+                    <div class="inputs">
+                        <div class="input-group">
+                            <label for="name-register">Name*:</label>
+                            <input id = "name-register" type="text" class="input">
+                        </div>
+                        <div class="input-group">
+                            <label for="username-register">Username*:</label>
+                            <input id = "username-register" type="text" class="input">
+                        </div>
+                        <div class="input-group">
+                            <label for="password-register">Password*:</label>
+                            <input id = "password-register" type="password" class="input">
+                        </div>  <div class="input-group">
+                            <label for="repeat-password-register">Repeat-password*:</label>
+                            <input id = "repeat-password-register" type="password" class="input">
+                        </div>
+                        <div class="input-group">
+                            <label for="email-register">Email number*:</label>
+                            <input id = "email-register" type="text" class="input"> 
+                        </div>
+                        <div class="input-group">
+                            <label for="phone-register">Phone number*:</label>
+                            <input id = "phone-register" type="text" class="input">
+                        </div>
+                    </div>  
+                    <div id="register-response"></div>
+                    <div class="buttons">
+                        <button class="main-button" onclick="showLoginModal()">Login</button>
+                        <button class="main-button" onclick="register()"> Register</button> 
+                    </div>
+                </form>
+            </div>
         </div>
         <script>
+          showLoginModal();
           var iframeContent = document.getElementById("content").contentWindow.location.href;
             window.onbeforeunload =  function() {
               iframeContent = document.getElementById("content").contentWindow.location.href;
