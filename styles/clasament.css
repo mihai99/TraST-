@@ -1,67 +1,84 @@
-.body-wrapper {
-    display: flex;
-    justify-content: space-between;
+h1 {
+    display: none;
     width: 100%;
-    flex-flow: row;
-    flex-direction: row;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
 }
 
-.title {
-    height: 100px;
-    text-align: center;
-    margin: auto;
-    align-content: center;
+.tables-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #fff5b3;
 }
 
 .left-table, .right-table {
-    flex: 50%;
-    text-align: center;
-    max-height: 300px;
-    overflow: auto;
-    box-sizing: border-box;
-    padding: 40px;
-    margin: 0 50px 50px;
-    width: 100%;
+    padding: 20px;
+    width: 50%;
+    min-width: 300px;
 }
 
-table, th, td {
+table {
+    table-layout: fixed;
+    max-height: 400px;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 18px;
+    flex: 0 1 auto;
+    align-self: auto;
+    overflow-y: auto;
+}
+
+table caption {
+    background-color: #0984e3;
+    color: #dfe6e9;
+    padding: 15px 10px;
+    box-sizing: border-box;
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-table {
+table tbody {
+    overflow-y: auto;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
     width: 100%;
 }
 
-tr {
-    background-color: #ecf0f1;
-}
-
-tr:nth-child(odd) {
-    background-color: #95a5a6;
-}
-
-th, td {
-    padding: 5px;
+td, th {
+    padding: 10px 5px;
 }
 
 th {
-    height: 40px;
-    background-color: #2980b9;
+    background-color: #0984e3;
+    color: #dfe6e9;
+    padding: 10px 30px;
+    font-size: 17px;
+}
+
+tr:nth-child(even) {
+    background-color: #636e72;
+}
+
+tr:nth-child(odd) {
+    background-color: #b2bec3;
+}
+
+td:nth-child(1) {
     text-align: center;
+    width: 50px;
 }
 
-.left-table {
-    float: left;
-    justify-content: center;
-}
-
-.right-table {
-    float: right;
-}
-
-@media screen and(max-width: 1200px) {
-    .left-table, .right-table {
-        flex: 100%;
+@media screen and (max-width: 850px) {
+    table {
+        width: 100%;
     }
 }

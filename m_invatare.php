@@ -3,11 +3,13 @@
 
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="../styles/general.css">
-        <link rel="stylesheet" type="text/css" href="../styles/invatare/invatare.css">
+        <link rel="stylesheet" type="text/css" href="styles/invatare/invatare.css">
     </head>
 
-    <body style="background:none">
+    <body>
+        <?php
+            include_once 'header.php';
+        ?>
         <div class="body-wrapper">
             <div class="container-intrebari">
                 <p>Intrebari</p>
@@ -50,44 +52,44 @@
                 <div class="semne-circulatie">
                     <ul>
                         <li>
-                            <a href="invatare-semne/indicatoare-prioritate.html">
-                                <img src="../images/invatare/semne%20circulatie/icons/prioritate-icon.png">
+                            <a href="pages/invatare-semne/indicatoare-prioritate.html">
+                                <img src="images/invatare/semne circulatie/icons/prioritate-icon.png">
                                 Indicatoare rutiere de prioritate
                             </a>
                         </li>
                         <li>
-                            <a href="invatare-semne/indicatoare-interzicere.html">
-                                <img src="../images/invatare/semne%20circulatie/icons/interzis-icon.png">
+                            <a href="pages/invatare-semne/indicatoare-interzicere.html">
+                                <img src="images/invatare/semne circulatie/icons/interzis-icon.png">
                                 Indicatoare de interzicere sau restrictie
                             </a>
                         </li>
                         <li>
-                            <a href="invatare-semne/indicatoare-obligare.html">
-                                <img src="../images/invatare/semne%20circulatie/icons/obligare-icon.png">
+                            <a href="pages/invatare-semne/indicatoare-obligare.html">
+                                <img src="images/invatare/semne circulatie/icons/obligare-icon.png">
                                 Indicatoare rutiere de obligare
                             </a>
                         </li>
                         <li>
-                            <a href="invatare-semne/indicatoare-avertizare.html">
-                                <img src="../images/invatare/semne%20circulatie/icons/avertizare-icon.png">
+                            <a href="pages/invatare-semne/indicatoare-avertizare.html">
+                                <img src="images/invatare/semne circulatie/icons/avertizare-icon.png">
                                 Indicatoare rutiere de avertizare
                             </a>
                         </li>
                         <li>
-                            <a href="invatare-semne/indicatoare-informare.html">
-                                <img src="../images/invatare/semne%20circulatie/icons/informare-icon.png">
+                            <a href="pages/invatare-semne/indicatoare-informare.html">
+                                <img src="images/invatare/semne circulatie/icons/informare-icon.png">
                                 Indicatoare rutiere de informare
                             </a>
                         </li>
                         <li>
-                            <a href="invatare-semne/indicatoare-orientare.html">
-                                <img src="../images/invatare/semne%20circulatie/icons/orientare-icon.png">
+                            <a href="pages/invatare-semne/indicatoare-orientare.html">
+                                <img src="images/invatare/semne circulatie/icons/orientare-icon.png">
                                 Indicatoare rutiere de orientare
                             </a>
                         </li>
                         <li>
-                            <a href="invatare-semne/indicatoare-lucrari.html">
-                                <img src="../images/invatare/semne%20circulatie/icons/lucrari-icon.png">
+                            <a href="pages/invatare-semne/indicatoare-lucrari.html">
+                                <img src="images/invatare/semne circulatie/icons/lucrari-icon.png">
                                 Indicatoare semnalizare lucrari pe carosabil
                             </a>
                         </li>
@@ -116,48 +118,53 @@
                         </li>
                         <br>
                     </ul>
-                    <img src="../images/invatare/cod_rutier.jpg" id="cod-rutier">
+                    <img src="images/invatare/cod_rutier.jpg" id="cod-rutier">
                 </div>
                 <div class="legislatie-optiuni">
                     <h3>Capitole:</h3>
                     <ul class="inv-list">
                         <li>
-                            <a href="invatare/cap1.php">I.Dispozitii generale</a>
+                            <a href="pages/invatare/cap1.php">I.Dispozitii generale</a>
                         </li>
                         <li>
-                            <a href="invatare/cap2.php">II.Vehiculele</a>
+                            <a href="pages/invatare/cap2.php">II.Vehiculele</a>
                         </li>
                         <li>
-                            <a href="invatare/cap3.php">III.Conducatorii de vehicule</a>
+                            <a href="pages/invatare/cap3.php">III.Conducatorii de vehicule</a>
                         </li>
                         <li>
-                            <a href="invatare/cap4.php">IV.Semnalizarea rutiera</a>
+                            <a href="pages/invatare/cap4.php">IV.Semnalizarea rutiera</a>
                         </li>
                         <li>
-                            <a href="invatare/cap5.php">V.Reguli de circulatie</a>
+                            <a href="pages/invatare/cap5.php">V.Reguli de circulatie</a>
                         </li>
                         <li>
-                            <a href="invatare/cap6.php">VI.Infractiuni si pedepse</a>
+                            <a href="pages/invatare/cap6.php">VI.Infractiuni si pedepse</a>
                         </li>
                         <li>
-                            <a href="invatare/cap7.php">VII.Raspunderea contraventionala</a>
+                            <a href="pages/invatare/cap7.php">VII.Raspunderea contraventionala</a>
                         </li>
                         <li>
-                            <a href="invatare/cap8.php">VIII.Cai de atac impotriva procesului-verbal de contestare a
+                            <a href="pages/invatare/cap8.php">VIII.Cai de atac impotriva procesului-verbal de contestare
+                                a
                                 contraventiei</a>
                         </li>
                         <li>
-                            <a href="invatare/cap9.php">IX.Atributii ale unor ministere si ale altor autoritati ale
+                            <a href="pages/invatare/cap9.php">IX.Atributii ale unor ministere si ale altor autoritati
+                                ale
                                 administratiei
                                 publice</a>
                         </li>
                         <li>
-                            <a href="invatare/cap10.php">X.Dispozitii finale</a>
+                            <a href="pages/invatare/cap10.php">X.Dispozitii finale</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <?php
+            include_once 'footer.php';
+        ?>
     </body>
 
 </html>

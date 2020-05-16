@@ -36,7 +36,12 @@ a {
     padding: 10px;
     margin: 0 20px;
     border: 1px solid #dfe6e9;
+    background-color: #57606f;
     transition: 0.4s;
+}
+
+.nav-btns li {
+    display: inline;
 }
 
 .show-menu-btn, .hide-menu-btn {
@@ -60,6 +65,12 @@ a {
     color: #74b9ff;
     border-color: #74b9ff;
     transition: 0.4s;
+    transform: scale(1.1);
+}
+
+#logout-btn:hover {
+    background-color: #c0392b;
+    color: white;;
 }
 
 #chk {
@@ -69,7 +80,7 @@ a {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
     .nav-btns a {
         margin: 0;
     }

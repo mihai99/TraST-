@@ -8,16 +8,22 @@
     </head>
 
     <body>
+        <?php
+            include_once '../../header.php'
+        ?>
         <div class="body-wrapper">
             <div class="cap-nav">
                 <a href="cap4.php" id="prev">Capitolul 4</a>
-                <a href="../m_invatare.html" id="home">CAPITOLUL V: Reguli de circulație</a>
+                <a href="../../m_invatare.php" id="home">CAPITOLUL V: Reguli de circulație</a>
                 <a href="cap6.php" id="next">Capitolul 6</a>
             </div>
             <?php
             include_once "cap5.html"
             ?>
         </div>
+        <?php
+            include_once '../../footer.php';
+        ?>
     </body>
 
 </html>
