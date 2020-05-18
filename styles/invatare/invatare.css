@@ -6,6 +6,7 @@
     width: 100%;
     height: 100%;
     place-content: start space-evenly;
+    overflow: hidden;
 }
 
 .body-wrapper > div {
@@ -68,6 +69,7 @@
     display: block;
     text-decoration: none;
     color: black;
+    margin-left: 0;
 }
 
 .legislatie-info, .legislatie-optiuni {
@@ -104,6 +106,7 @@
     text-decoration: none;
     color: black;
     padding: 7px;
+    margin-left: 0;
 }
 
 #cod-rutier {
@@ -112,6 +115,10 @@
 }
 
 @media screen and (max-width: 850px) {
+
+    .semne-circulatie li{
+        align-self: center;
+    }
 
     .legislatie-info, .legislatie-optiuni {
         flex: 100%;
