@@ -15,7 +15,7 @@
             <img src="/images/cover.png" class="logo">
         </a>
         <input type="checkbox" id="chk">
-        <label for="chk" class="show-menu-btn" onclick="openMobileMenu()">
+        <label for="chk" class="show-menu-btn">
             <i class="fas fa-bars"></i>
         </label>
         <ul class="nav-btns">

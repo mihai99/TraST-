@@ -18,7 +18,7 @@
         <img src="images/tests-selector/image3.jpg">
     </div>
 
-    <div id="random-test" class="container">
+    <div id="random-test" class="container body-wrapper">
         <p class="title">CHESTIONARE AUTO DRPCIV 2020 CATEGORIA B</p>
         <p class="subtitle">Chestionare auto DRPCIV, teste si intrebari pentru categoria B. Completand chestionarele
             auto DRPCIV va ajuta sa luati examenul din prima.</p>
@@ -32,7 +32,7 @@
         <a class="main-button" href="test.php">Incepe un chestionar nou</a>
     </div>
 
-    <div id="random-level-tests" class="container">
+    <div id="random-level-tests" class="container body-wrapper">
         <p>Incepe un chestionar de urmatoarea dificultate: </p>
         <div class="buttons">
             <a href="test.php" class="main-button">Usor</a>
@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <div id="specific-tests" class="container">
+    <div id="specific-tests" class="container body-wrapper">
         <p>Incepe un anumit test: </p>
         <div id="all-specific-tests">
             <section class="test-group">

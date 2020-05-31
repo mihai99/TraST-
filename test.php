@@ -3,14 +3,15 @@
     <script src="javascript/timer.js"></script>
     <script src="javascript/page-loaders-utils.js"></script>
     <script src="javascript/answers-handler.js"></script>
+    <script src="javascript/ajax/questions-handler.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/general.css">
     <link rel="stylesheet" type="text/css" href="styles/tests/test.css">
 </head>
-<body id="page">
+<body id="page" onload="beginTest()">
     <?php
         include_once 'header.php';
     ?>
-    <div class="test">
+    <div class="test body-wrapper">
         <div class="top-info">
             <div id="all-questions" class="top-info-section">
                 26
@@ -22,41 +23,39 @@
             </div>
             <div id="time" class="top-info-section">30:00</div>
             <div id="corrent-answers" class="top-info-section">
-                6
+                0
                 <p>Raspunsuri corecte</p>
             </div>
             <div id="wrong-answers" class="top-info-section">
-                9
+                0
                 <p>Raspunsuri gresite</p>
             </div>
         </div>
         <div class="question">
-            <div class="question-body">Ce obligaţii vă revin atunci când, pe un drum public, întâlniţi autovehicule
-                aparţinând Serviciului de Ambulanţă sau Serviciului Român de Informaţii, care folosesc mijloacele de
-                avertizare luminoasă şi sonoră?
+            <div class="question-body" id="question-body">
             </div>
             <div class="question-bottom-section">
                 <div class="answers">
                     <div id="answer1" class="answer" onclick="updateSelectedAnswer(this)">
                         <p>A</p>
-                        <p>să opriţi imediat pe dreapta părţii carosabile;</p>
+                        <p id="answer1text"></p>
                     </div>
                     <div id="answer2" class="answer" onclick="updateSelectedAnswer(this)">
                         <p>B</p>
-                        <p>să opriţi imediat pe dreapta părţii carosabile;</p>
+                        <p id="answer2text"></p>
                     </div>
                     <div id="answer3" class="answer" onclick="updateSelectedAnswer(this)">
                         <p>C</p>
-                        <p>să opriţi imediat pe dreapta părţii carosabile;</p>
+                        <p id="answer3text"></p>
                     </div>
                 </div>
-                <img src="images/tests-questions/image1.png" alt="" class="question-image">
+                <img id="questionImage" src="" alt="" class="question-image">
             </div>
         </div>
         <div class="bottom-buttons">
             <a id="button-later" class="secondary-button" href="test-passed.php">Raspunde mai tarziu</a>
-            <a id="button-delete" class="secondary-button" href="test-failed.php">Sterge raspunsul</a>
-            <a id="button-send" class="secondary-button" href="test-passed.php">Trimite raspunsul</a>
+            <button id="button-delete" class="secondary-button" onclick="resetAnswer()">Sterge raspunsul</button>
+            <button id="button-send" class="secondary-button" onclick="sendResponse()">Trimite raspunsul</button>
         </div>
     </div>
     <?php

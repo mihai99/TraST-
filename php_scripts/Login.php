@@ -9,3 +9,4 @@
 
         AccountManager::loginUser($username, $password);
     }
+?>
