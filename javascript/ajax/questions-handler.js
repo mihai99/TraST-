@@ -16,8 +16,7 @@ function beginTest() {
     
   }
 
-  function getQuestion() {
-    
+  function getQuestion() {    
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
@@ -42,7 +41,8 @@ function beginTest() {
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send();
     
-  }
+}
+
 function sendResponse() {
     if(document.getElementsByClassName("selected-answer")[0]) {
         let answer = document.getElementsByClassName("selected-answer")[0].firstElementChild.innerHTML;
@@ -89,6 +89,20 @@ function updateTexts() {
     xmlhttp.send();
 }
 
+function postponeQuestion()
+{
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {          
+            console.log("question postponed");                   
+            getQuestion();                 
+        }
+    };
+    const requestURL = "/php_scripts/PostponeQuestion.php";
+    xmlhttp.open("POST", requestURL);
+    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp.send();
+}
 function resetAnswer() {
     document.getElementsByClassName("selected-answer")[0].classList.remove("selected-answer");
 }

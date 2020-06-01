@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="bottom-buttons">
-            <a id="button-later" class="secondary-button" href="test-passed.php">Raspunde mai tarziu</a>
+            <button id="button-later" class="secondary-button" onclick="postponeQuestion()">Raspunde mai tarziu</button>
             <button id="button-delete" class="secondary-button" onclick="resetAnswer()">Sterge raspunsul</button>
             <button id="button-send" class="secondary-button" onclick="sendResponse()">Trimite raspunsul</button>
         </div>

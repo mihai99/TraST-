@@ -8,7 +8,10 @@ require_once('../php_scripts/DatabaseConnectionManager.php');
             session_start();
             $_SESSION["dificulty"] = 0;
             $_SESSION["testNumber"] = 0;
-            $_SESSION["showedQuestions"] = array(-1);
+            $_SESSION["currentQuestion"] = 0;
+            $_SESSION["correctQuestions"] = 0;
+            $_SESSION["showedQuestions"] = array();
+            $_SESSION["postponedQuestions"] = array();
             return "done";
         }
 
@@ -25,6 +28,10 @@ require_once('../php_scripts/DatabaseConnectionManager.php');
         }
 
         private static function getQuestion() {
+            session_start();
+            if(count($_SESSION["postponedQuestions"])-1 + $_SESSION["currentQuestion"] >= 26) {
+                return self::getPostPonedQuestion();
+            }
             $sql = "SELECT * FROM questions order by RAND() LIMIT 1";
             if ($_SESSION["dificulty"] != 0) {
                 $sql = "SELECT * FROM questions where dificulty = " . $_SESSION["dificulty"] . "order by RAND() LIMIT 1";
@@ -45,6 +52,22 @@ require_once('../php_scripts/DatabaseConnectionManager.php');
             } else {
                 echo "false";
             }
+        }
+
+        public static function getPostPonedQuestion() {
+            session_start();
+            $sql = "SELECT * FROM questions where id = " . $_SESSION["postponedQuestions"][0];
+            array_shift($_SESSION["postponedQuestions"]);          
+            $result = DatabaseConnectionManager::get_conn()->query($sql);           
+            return $result->fetchAll();
+        }
+
+        public static function postPoneQuestion() {
+            session_start();
+            if($_SESSION["postponedQuestions"] == null) {
+                $_SESSION["postponedQuestions"] = array();
+            }
+            array_push($_SESSION["postponedQuestions"],  $_SESSION["CurrentQuestionId"]);
         }
     }
 ?>
