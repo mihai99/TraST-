@@ -1,0 +1,243 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: none;
+}
+
+#login-success {
+    position: fixed;
+    display: block;
+    bottom: 20px;
+    right: 30px;
+    background-color: #32ff7e;
+    color: white;
+    padding: 10px 20px;
+    font-size: 22px;
+    border: 2px solid #f5f6fa;
+    border-radius: 10px;
+    animation: login-view 5s forwards;
+}
+
+@keyframes login-view {
+    from {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.85;
+    }
+
+    50% {
+        opacity: 0.75;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.row {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.gallery {
+    width: 30%;
+    margin: 5px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+    max-height: 450px;
+}
+
+.about {
+    background: #fff5b3;
+    width: 70%;
+    display: flex;
+    padding-left: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.description {
+    margin-top: 10px;
+    padding: 40px 20px 40px 20px;
+}
+
+.about p {
+    font-size: 24px;
+    text-align: justify;
+    margin-top: 8px;
+}
+
+.highscores-container {
+    margin: 20px 20px 0px 0px;
+}
+
+.highscores-container .highscores {
+
+    padding: 10px;
+    width: 240px;
+}
+
+.highscores-container .highscores p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr:nth-child(even) {
+    background-color: #ffe11b;
+}
+
+table td, table th {
+    border: 1px solid #ffe11b;
+    text-align: center;
+    padding: 2px 8px;
+}
+
+.description .main-button {
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.articles h3 {
+    width: 100%;
+    padding: 20px;
+    font-size: 26px;
+    background: #fff5b3;
+    border-radius: 5px;
+}
+
+article {
+    margin: 10px 0px;
+    width: 24%;
+    background: #fff5b3;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article img {
+    width: 100%;
+    height: 150px;
+}
+
+article .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 020px;
+    text-align: center;
+}
+
+article .date {
+    margin: 0px 20px;
+    color: #3b3b3b;
+}
+
+article p {
+    margin: 10px 20px;
+    text-align: justify;
+    height: 160px;
+    overflow: hidden;
+}
+
+article .secondary-button {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 1200px) {
+    article {
+        width: 32%;
+    }
+
+    .hide-md {
+        display: none;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .first {
+        flex-direction: column-reverse;
+    }
+
+    .gallery {
+        width: calc(100% - 10px);
+    }
+
+    .description {
+        padding: 10px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+
+    .about {
+        width: calc(100% - 10px);
+        padding-left: 0;
+    }
+
+    .highscores {
+        padding: 0;
+    }
+
+    article {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .articles {
+        justify-content: space-evenly;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .highscores {
+        width: 80% !important;
+        margin: 10%;
+    }
+
+    .highscores-container {
+        margin: 0;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

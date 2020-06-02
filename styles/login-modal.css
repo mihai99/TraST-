@@ -1,0 +1,64 @@
+.inputs-modal {
+    background: #fff5b3;
+    max-width: 300px;
+    height: 200px;
+    position: fixed;
+    z-index: 100;
+    border-radius: 10px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    justify-content: 
+    space-between;
+}
+#login-modal {
+    height: 200px;
+}
+#register-modal {
+    height: 460px;
+}
+.inputs-modal .close {
+    text-align: right;
+    margin-top: -20px;
+    border-radius: 5px;
+    width: 23px;
+    text-align: center;
+    float: right;
+    margin-left: 316px;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 31px;
+    background: #c7c2c2;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.inputs-modal .close:hover {
+    background:#ff5d5d;
+}
+.inputs-modal .inputs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputs-modal .inputs .input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0px;
+}
+.inputs-modal .inputs .input-group .input {
+    height: 24px;
+    border-radius: 8px;
+}
+.inputs-modal .buttons {
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+}

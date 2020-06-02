@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+.body-wrapper {
+    width: 100%;
+    height: 100%;
+    place-content: start space-evenly;
+    overflow: hidden;
+}
+
+.body-wrapper > div {
+    border: 4px solid #2f3542;
+    padding: 20px;
+    margin: 20px 10%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff5b3;
+}
+
+.semne-info, .semne-circulatie {
+    flex: 45%;
+    justify-content: center;
+}
+
+.semne-info ul {
+    list-style: none;
+}
+
+#semne-main {
+    width: 350px;
+    height: 300px;
+}
+
+.semne-info p {
+    text-indent: 50px;
+}
+
+.semne-circulatie ul {
+    align-content: center;
+}
+
+.semne-circulatie li {
+    list-style: none;
+    padding: 10px;
+    background-color: #ced6e0;
+    border: 3px solid #b2bec3;
+    border-radius: 10px;
+    margin: 10px;
+    width: 430px;
+    transition: 0.7s;
+}
+
+.semne-circulatie li:hover {
+    transform: scale(1.04);
+    transition: 0.7s;
+    border-color: #2ed573;
+}
+
+.semne-circulatie li img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.semne-circulatie li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-left: 0;
+}
+
+.legislatie-info, .legislatie-optiuni {
+    flex: 50%;
+    padding: 20px;
+}
+
+.legislatie-info {
+    text-align: center;
+}
+
+.inv-list {
+    list-style: none;
+}
+
+.inv-list li {
+    background-color: #ced6e0;
+    border: 3px solid #b2bec3;
+    border-radius: 10px;
+    padding: 0 3px;
+    margin: 10px 0;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.inv-list li:hover {
+    transform: scale(1.04);
+    border-color: #2ed573;
+    transition: 0.7s;
+}
+
+.inv-list li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    margin-left: 0;
+}
+
+#cod-rutier {
+    width: 300px;
+    height: 300px;
+}
+
+@media screen and (max-width: 850px) {
+
+    .semne-circulatie li{
+        align-self: center;
+    }
+
+    .legislatie-info, .legislatie-optiuni {
+        flex: 100%;
+        flex-direction: column;
+    }
+
+}
