@@ -7,30 +7,34 @@
         <link rel="stylesheet" type="text/css" href="../../styles/invatare/indicatoare.css">
     </head>
     <body>
-        <div class="body-wrapper">
+
+        <?php
+            include_once "../../header.php";
+        ?>
+        <div class="body-wrapper inv-body-container">
             <div class="cap-nav">
-                <a href="indicatoare-prioritate.html">
+                <a href="indicatoare-prioritate.php">
                     Indicatoare rutiere de prioritate
                 </a>
-                <a href="indicatoare-interzicere.html">
+                <a href="indicatoare-interzicere.php">
                     Indicatoare de interzicere sau restrictie
                 </a>
-                <a href="indicatoare-obligare.html">
+                <a href="indicatoare-obligare.php">
                     Indicatoare rutiere de obligare
                 </a>
-                <a href="indicatoare-avertizare.html">
+                <a href="indicatoare-avertizare.php">
                     Indicatoare rutiere de avertizare
                 </a>
-                <a href="indicatoare-orientare.html">
+                <a href="indicatoare-orientare.php">
                     Indicatoare rutiere de orientare
                 </a>
-                <a href="indicatoare-lucrari.html">
+                <a href="indicatoare-lucrari.php">
                     Indicatoare semnalizare lucrari pe carosabil
                 </a>
             </div>
             <div class="page-container">
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Trecere-de-pietoni.jpg.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Trecere-de-pietoni.jpg.webp">
                     <p>
                         <strong> Trecere de pietoni</strong>
                         Acest indicator sa instaleaza in apropierea unei treceri pentru pietoni. Acesta poate fi
@@ -38,7 +42,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Trecere-de-pietoni-2.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Trecere-de-pietoni-2.jpg">
                     <p>
                         <strong> Trecere de pietoni</strong>
                         Acest indicator sa instaleaza in apropierea unei treceri pentru pietoni. Acesta poate fi
@@ -46,7 +50,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Limite-generale-de-viteza.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Limite-generale-de-viteza.jpg">
                     <p>
                         <strong> Limite generale de viteza</strong>
                         Se instaleaza dupa trecerea frontierei unui stat. Are rolul de a informa conducatorul de vehicul
@@ -54,7 +58,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Sens-unic.jpg.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Sens-unic.jpg.webp">
                     <p>
                         <strong> Sens unic</strong>
                         Indicatorul alaturat se monteaza la intrarea pe drumurile cu sens unic. Terminarea sectorului cu
@@ -63,7 +67,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Autostrada.jpg.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Autostrada.jpg.webp">
                     <p>
                         <strong>Autostrada</strong>
                         Conducatorul auto va intalni acest indicator la intrarea pe autostrada. La intalnirea acestui
@@ -72,14 +76,14 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Sfarsit-de-autostrada.jpg.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Sfarsit-de-autostrada.jpg.webp">
                     <p>
                         <strong> Sfarsit de autostrada</strong>
                         Acest indicator se monteaza la iesirea de pe o autostrada.
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/informare/conditiile-meteorologice.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/informare/conditiile-meteorologice.jpg">
                     <p>
                         <strong> Limite maxime de viteza pe autostrada, in functie de conditiile meteorologice</strong>
                         Se afla instalat pe autostrada pentru a impune conducatorilor auto sa circule cu limite diferite
@@ -87,7 +91,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Spital.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Spital.jpg">
                     <p>
                         <strong>Spital</strong>
                         Este montat in apropierea spitalelor pentru informarea conducatorilor auto in legatura cu
@@ -96,7 +100,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Politie.jpg.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/informare/Indicatoare-de-informare-Politie.jpg.webp">
                     <p>
                         <strong>Politie</strong>
                         Indicatorul din imaginea alaturata se amplaseaza in apropierea unui post de politie la care se
@@ -105,13 +109,13 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/informare/Denumirea-strazii.jpg.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/informare/Denumirea-strazii.jpg.webp">
                     <p>
                         <strong> Denumirea strazii</strong>
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/informare/Parcare.jpg.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/informare/Parcare.jpg.webp">
                     <p>
                         <strong>Parcare</strong>
                         Are rolul de a informa conducatorul auto ca in apropiere se afla un spatiu destinat parcarii. Pe
@@ -119,7 +123,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/informare/Zona-rezidentiala.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/informare/Zona-rezidentiala.jpg">
                     <p>
                         <strong> Zona rezidentiala</strong>
                         Indicatorul alaturat se monteaza la intrarea in zonele rezidentiale. Sunt zone cu trafic mixt,
@@ -131,5 +135,8 @@
             </div>
             <a id="topBtn" href="#">TOP</a>
         </div>
+        <?php
+            include_once "../../footer.php";
+        ?>
     </body>
 </html>

@@ -1,5 +1,5 @@
 function beginTest() {
-    
+
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
@@ -13,16 +13,16 @@ function beginTest() {
     xmlhttp.open("POST", requestURL);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send();
-    
+
   }
 
-  function getQuestion() {    
+  function getQuestion() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
             console.log(JSON.parse(this.responseText));
                 let response = JSON.parse(this.responseText);
-                
+
                 document.getElementById("answer1text").innerHTML = response["answer1"];
                 document.getElementById("answer2text").innerHTML = response["answer2"];
                 document.getElementById("answer3text").innerHTML = response["answer3"];
@@ -41,7 +41,7 @@ function beginTest() {
     xmlhttp.open("POST", requestURL);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send();
-    
+
 }
 
 function sendResponse() {
@@ -60,6 +60,7 @@ function sendResponse() {
                 }
             };
             const requestURL = "/php_scripts/CheckAnswer.php?answer=" + answer;
+            console.log(answer);
             xmlhttp.open("GET", requestURL);
             xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             xmlhttp.send();
@@ -83,8 +84,8 @@ function updateTexts() {
             document.getElementById("remaining-questions").innerHTML = 26 - answersNumber + "<p>Intrebari totale</p>";
             document.getElementById("corrent-answers").innerHTML = correctNumber + "<p>Raspunsuri corecte</p>";
             document.getElementById("wrong-answers").innerHTML = wrongNumber + "<p>Raspunsuri gresite</p>";
-            console.log("updated");                                  
-                
+            console.log("updated");
+
         }
     };
     const requestURL = "/php_scripts/GetQuestionsNubers.php";
@@ -97,9 +98,9 @@ function postponeQuestion()
 {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
-        if (this.readyState === 4 && this.status === 200) {          
-            console.log("question postponed");                   
-            getQuestion();                 
+        if (this.readyState === 4 && this.status === 200) {
+            console.log("question postponed");
+            getQuestion();
         }
     };
     const requestURL = "/php_scripts/PostponeQuestion.php";

@@ -1,5 +1,6 @@
 <?php
     require_once('./DatabaseConnectionManager.php');
+    session_start();
 
     class AccountManager
     {
@@ -16,6 +17,22 @@
             $result = DatabaseConnectionManager::get_conn()->query($sql);
             return $result->fetchAll();
         }
+
+        private static function getUserProgress($userID)
+        {
+            $sql = "SELECT * FROM user_progress WHERE user_id=" . $userID;
+            $result = DatabaseConnectionManager::get_conn()->query($sql);
+            return $result->fetch();
+        }
+
+        public static function getTotalQuestions()
+        {
+            $sql = 'SELECT MAX(id) AS cnt FROM questions';
+
+            $result = DatabaseConnectionManager::get_conn()->query($sql);
+            return $result->fetch();
+        }
+
 
         public static function registerUser($name, $username, $password, $repeatedPassword, $email, $phone)
         {
@@ -48,6 +65,8 @@
                 $request->bindParam(':phone', $phone);
                 if ($request->execute()) {
                     $_SESSION['registered'] = true;
+                    echo "Session set: " . $_SESSION['registered'];
+                    sleep(4);
                     header("location:/index.php");
                 } else {
                     header("location:/register.php?error=sqlerror");
@@ -62,17 +81,29 @@
             else {
                 $usersResult = AccountManager::getUsersWithUsername($username);
                 if (count($usersResult) > 0) {
-                    for ($i = 0; $i < count($usersResult); $i++)
-                        if (password_verify($password, $usersResult[$i]["password"])) {
+                    foreach ($usersResult as $account) {
+                        if (password_verify($password, $account["password"])) {
+                            $_SESSION['id'] = $account['id'];
                             $_SESSION['username'] = $username;
-                            $_SESSION['email'] = $usersResult['email'];
+                            $_SESSION['email'] = $account['email'];
                             $_SESSION['logged_in'] = true;
+                            $progress = AccountManager::getUserProgress($account['id']);
+
+                            $_SESSION['progres'] = intval($progress[1]) + 1;
+                            $_SESSION['chestionare_totale'] = $progress[2];
+                            $_SESSION['chestionare_corecte'] = $progress[3];
+
+                            $_SESSION['intrebari_totale'] = AccountManager::getTotalQuestions()['cnt'] + 1;
+
                             header("location:/index.php");
-                            return;
+                            exit();
                         }
+                    }
                     header("location:/login.php?error=user%20not%20found");
+                    exit();
                 } else {
                     header("location:/login.php?error=user%20not%20found");
+                    exit();
                 }
             }
 

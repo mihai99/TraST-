@@ -61,6 +61,11 @@
     padding: 20px;
 }
 
+.inv-body-container {
+    margin: 0 90px;
+    background-color: #fff5b3;
+}
+
 @media screen and (max-width: 1100px) {
     .inv-container {
         flex: 100%;

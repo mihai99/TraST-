@@ -7,30 +7,33 @@
         <link rel="stylesheet" type="text/css" href="../../styles/invatare/indicatoare.css">
     </head>
     <body>
-        <div class="body-wrapper">
+        <?php
+            include_once "../../header.php";
+        ?>
+        <div class="body-wrapper inv-body-container">
             <div class="cap-nav">
-                <a href="indicatoare-prioritate.html">
+                <a href="indicatoare-prioritate.php">
                     Indicatoare rutiere de prioritate
                 </a>
-                <a href="indicatoare-obligare.html">
+                <a href="indicatoare-obligare.php">
                     Indicatoare rutiere de obligare
                 </a>
-                <a href="indicatoare-avertizare.html">
+                <a href="indicatoare-avertizare.php">
                     Indicatoare rutiere de avertizare
                 </a>
-                <a href="indicatoare-informare.html">
+                <a href="indicatoare-informare.php">
                     Indicatoare rutiere de informare
                 </a>
-                <a href="indicatoare-orientare.html">
+                <a href="indicatoare-orientare.php">
                     Indicatoare rutiere de orientare
                 </a>
-                <a href="indicatoare-lucrari.html">
+                <a href="indicatoare-lucrari.php">
                     Indicatoare semnalizare lucrari pe carosabil
                 </a>
             </div>
             <div class="page-container">
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/accesul_interzis.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/accesul_interzis.png.webp">
                     <p>
                         <strong> Accesul interzis</strong><br>
                         In general, se amplaseaza pe drumurile cu sens unic, pe sensul pe care nu este permisa
@@ -40,7 +43,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_ambele_sensuri.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_ambele_sensuri.png.webp">
                     <p>
                         <strong> Circulatia interzisa in ambele sensuri</strong><br>
                         Se amplaseaza la intrarea pe drumurile publice pe care accesul vehiculelor este interzis. Acest
@@ -49,7 +52,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/accesul_interzis_autovehiculelor.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/accesul_interzis_autovehiculelor.png.webp">
                     <p>
                         <strong> Accesul interzis autovehiculelor cu exceptia motocicletelor fara atas</strong><br>
                         Este amplasat la intrarea pe drumurile publice pe care accesul tuturor autovehiculelor, cu
@@ -57,7 +60,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/accesul_interzis_motocicletelor.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/accesul_interzis_motocicletelor.png.webp">
                     <p>
                         <strong> Accesul interzis motocicletelor</strong><br>
                         Acest indicator se amplaseaza la intrarea pe drumurile publice pe care accesul motocicletelor
@@ -66,7 +69,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_mopedelor.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_mopedelor.png.webp">
                     <p>
                         <strong> Accesul interzis motocicletelor</strong><br>
                         Acest indicator se amplaseaza la intrarea pe drumurile publice pe care accesul motocicletelor
@@ -74,14 +77,14 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_bicicletelor.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_bicicletelor.png.webp">
                     <p>
                         <strong> Accesul interzis bicicletelor</strong><br>
                         Se intalneste la intrarea pe drumurile publice pe care accesul bicicletelor este interzis.
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_camioane.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_camioane.png.webp">
                     <p>
                         <strong> Accesul interzis vehiculelor destinate transportului de marfuri</strong>
                         Se instaleaza la inceputul drumurilor publice pe care accesul vehiculelor destinate
@@ -91,7 +94,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_remorca_osie.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_remorca_osie.png.webp">
                     <p>
                         <strong>Accesul interzis autovehiculelor cu remorca, cu exceptia celor cu semiremorca sau cu
                             remorca cu
@@ -101,7 +104,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_autobuzelor.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_autobuzelor.png.webp">
                     <p>
                         <strong> Accesul interzis autobuzelor</strong><br>
                         Indicatorul din imagine se monteaza la intrarea pe drumurile publice pe care accesul autobuzelor
@@ -109,7 +112,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_pietonilor.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_pietonilor.png.webp">
                     <p>
                         <strong> Accesul interzis pietonilor</strong><br>
                         Acest indicator intezice accesul pietonilor pe sectorul de drum public pe care este amplasat.
@@ -119,7 +122,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_tractiune_animala.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_tractiune_animala.png.webp">
                     <p>
                         <strong> Accesul interzis vehiculelor cu tractiune animala</strong><br>
                         Se monteaza la intrarea pe drumurile publice pe care accesul vehiculelor cu tractiune animala
@@ -127,7 +130,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/impinse.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/impinse.png.webp">
                     <p>
                         <strong> Accesul interzis vehiculelor impinse sau trase cu mana</strong><br>
                         Indicatorul se aseaza la intrarea pe drumurile publice pe care accesul vehiculelor impinse sau
@@ -135,7 +138,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_tractoarelor.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_tractoarelor.png.webp">
                     <p>
                         <strong> Accesul interzis tractoarelor si masinilor autopropulsate pentru lucrari</strong><br>
                         Poate fi intalnit in localitatile rurale, pe drumurile publice pe care accesul tractoarelor si
@@ -143,7 +146,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_autovehiculelor.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_autovehiculelor.png.webp">
                     <p>
                         <strong> Accesul interzis autovehiculelor</strong><br>
                         Indicatorul din imaginea alaturata se amplaseaza la intrarea pe drumurile publice pe care
@@ -152,7 +155,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/accesul_interzis_latime.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/accesul_interzis_latime.png.webp">
                     <p>
                         <strong> Accesul interzis vehiculelor cu latimea mai mare de ?m</strong><br>
                         Se amplaseaza pe sectoarele de drum cu latime redusa, precum si in intersectiile care preced
@@ -162,7 +165,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/accesul_interzis_inaltime.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/accesul_interzis_inaltime.png.webp">
                     <p>
                         <strong> Accesul interzis vehiculelor cu inaltimea mai mare de ?m</strong><br>
                         Indicatorul alaturat se monteaza pe sectorul de drum cu inaltime mai mica de 5,10 m (capetele
@@ -173,7 +176,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/accesul_interzis_masa_mare.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/accesul_interzis_masa_mare.png.webp">
                     <p>
                         <strong> Accesul interzis vehiculelor cu masa mai mare de ?t</strong><br>
                         Poate fi intalnit pe sectorul de drum pe care este interzis accesul vehiculelor cu o masa mai
@@ -183,7 +186,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_masa_osia_simpla.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_masa_osia_simpla.png.webp">
                     <p>
                         <strong> Accesul interzis vehiculelor cu masa mai mare de ?t</strong><br>
                         Are rolul de a preciza inceputul sectorului de drum pe care este interzis accesul vehiculelor cu
@@ -191,7 +194,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_masa_osia_dubla.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_masa_osia_dubla.png.webp">
                     <p>
                         <strong>Accesul interzis vehiculelor cu masa pe osie dubla mai mare de ?t</strong><br>
                         Se instaleaza pe sectorul de drum pe care este interzis accesul vehiculelor cu o masa pe osie
@@ -199,7 +202,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_masa_osia_tripla.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_masa_osia_tripla.png.webp">
                     <p>
                         <strong>Accesul interzis vehiculelor cu masa pe osie tripla mai mare de ?t</strong><br>
                         Indicatorul din imaginea alaturata se amplaseaza pe sectorul de drum pe care este interzis
@@ -207,7 +210,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_lungime.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_lungime.png.webp">
                     <p>
                         <strong> Accesul interzis autovehiculelor sau ansamblurilor de vehicule cu lungimea mai mare de
                             ?m</strong><br>
@@ -217,7 +220,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/distanta-obligatorie.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/distanta-obligatorie.png.webp">
                     <p>
                         <strong> Interzis autovehiculelor de a circula fara a mentine intre ele un interval de cel
                             putin ?m</strong><br>
@@ -228,7 +231,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_la_stanga.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_la_stanga.png.webp">
                     <p>
                         <strong> Interzis a vira la stanga</strong><br>
                         Se afla instalat inaintea intersectiei in care se interzice virajul la stanga, deoarece pe
@@ -238,7 +241,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_la_dreapta.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_la_dreapta.png.webp">
                     <p>
                         <strong> Interzis a vira la dreapta</strong><br><br>
                         Se afla instalat inaintea intersectiei in care se interzice virajul la dreapta, deoarece pe
@@ -248,7 +251,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/intoarcerea_interzisa.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/intoarcerea_interzisa.png.webp">
                     <p>
                         <strong> Intoarcerea interzisa</strong><br>
                         Are rolul de a interzice intoarcerea in zona respectiva, deoarece daca s-ar executa aceasta
@@ -256,7 +259,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/limitare_de_viteza.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/limitare_de_viteza.png.webp">
                     <p>
                         <strong> Limitare de viteza</strong><br>
                         Este montat pe sectorul de drum unde viteza de circulatie a vehiculelor trebuie limitata. Zona
@@ -266,7 +269,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/depasirea_interzisa.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/depasirea_interzisa.png.webp">
                     <p>
                         <strong> Depasirea autovehiculelor, cu exceptia motocicletelor fara atas, intezisa</strong><br>
                         La intalnirea acestui indicator depasirea autovehiculelor, cu exceptia motocicletelor fara atas,
@@ -281,7 +284,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/depasirea_interzisa_camioane.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/depasirea_interzisa_camioane.png.webp">
                     <p>
                         <strong> Depasirea interzisa autovehiculelor destinate transportului de marfuri</strong><br>
                         Are rolul de a preciza inceputul sectorului de drum pe care depasirea este interzisa
@@ -294,7 +297,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/limitare_de_viteza2.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/limitare_de_viteza2.png.webp">
                     <p>
                         <strong> Limitare de viteza diferentiata pe categorii de autovehicule</strong><br>
                         Se amplaseaza pe sectorul de drum unde viteza de circulatie trebuie limitata pe categorii de
@@ -304,7 +307,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/claxonarea_interzisa.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/claxonarea_interzisa.png.webp">
                     <p>
                         <strong> Claxonarea interzisa</strong><br>
                         La intalnirea acestui indicator claxonarea este interzisa in intervalul orar 6.00 – 22.00 (intre
@@ -313,7 +316,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/vama.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/vama.png.webp">
                     <p>
                         <strong>Vama</strong><br>
                         Se amplaseaza inaintea punctului vamal. La intalnirea acestui indicator, conducatorul de vehicul
@@ -321,7 +324,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/control_politie.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/control_politie.png.webp">
                     <p>
                         <strong> Control Politie</strong><br>
                         Conducatorul auto poate intalni acest indicator inaintea unei zone in care este prezenta
@@ -329,7 +332,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/sfarsitul-tuturor-restrictiilor.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/sfarsitul-tuturor-restrictiilor.jpg">
                     <p>
                         <strong> Sfarsitul tuturor restrictiilor</strong><br>
                         Indicatorul din imagine se monteaza in zona in care se termina o restrictie (cand pentru aceasta
@@ -338,21 +341,21 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/Sfarsitul-limitarii-de-viteza.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/Sfarsitul-limitarii-de-viteza.jpg">
                     <p>
                         <strong> Sfarsitul limitarii de viteza</strong><br>
                         Are rolul de a preciza sfarsitul sectorului de drum pe care era impusa limitarea de viteza.
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/Sfarsitul-interzicerii-depasirii.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/Sfarsitul-interzicerii-depasirii.jpg">
                     <p>
                         <strong> Sfarsitul interzicerii de a depasi</strong><br>
                         Este instalat in zona in care se termina interzicerea de a depasi.
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/stationarea_interzisa.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/stationarea_interzisa.png.webp">
                     <p>
                         <strong> Stationarea interzisa</strong><br>
                         La intalnirea acestui indicator stationarea vehiculelor este interzisa. Zona de actiune a
@@ -364,7 +367,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/oprirea_interzisa.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/oprirea_interzisa.png.webp">
                     <p>
                         <strong> Oprirea interzisa</strong><br>
                         Se afla instalat in locurile in care oprirea vehiculelor este interzisa. Zona de actiune a
@@ -376,7 +379,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzicere_stationare_alternanta.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzicere_stationare_alternanta.png.webp">
                     <p>
                         <strong> Stationare alternata</strong><br>
                         Indicatorul alaturat se monteaza pe sectorul de drum in locurile in care stationarea vehiculelor
@@ -388,7 +391,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzicere_stationare_alternanta2.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzicere_stationare_alternanta2.png.webp">
                     <p>
                         <strong> Stationare alternata</strong><br>
                         Indicatorul alaturat se monteaza pe sectorul de drum in locurile in care stationarea vehiculelor
@@ -400,7 +403,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/stationare_durata_limitata.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/stationare_durata_limitata.png.webp">
                     <p>
                         <strong> Zona de stationare cu durata limitata</strong><br>
                         Conducatorul auto va intalni acest indicator in locurile cu durata de stationare limitata. Poate
@@ -411,28 +414,28 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/Sfarsit-stationare-limitata.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/Sfarsit-stationare-limitata.jpg">
                     <p>
                         <strong> Sfarsitul zonei de stationare cu durata limitata</strong><br>
                         Are rolul de a preciza sfarsitul zonei de stationare cu durata limitata.
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/Zona-viteza-limitata.jpg.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/Zona-viteza-limitata.jpg.webp">
                     <p>
                         <strong>Zona cu viteza limitata la 30 km/h</strong><br>
                         Este instalat in zona in care viteza de circulatie trebuie limitata la 30 km/h.
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/Sfarsit-zona-viteza-limitata.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/Sfarsit-zona-viteza-limitata.jpg">
                     <p>
                         <strong>Sfarsitul zonei cu viteza limitata la 30 km/h</strong><br>
                         Este amplasat la sfarsitul zonei in care viteza de circulatie era limitata la 30km/h.
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_substante_inframabile.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_substante_inframabile.png.webp">
                     <p>
                         <strong> Accesul interzis vehiculelor care transporta substante explozive sau usor
                             inflamabile</strong><br>
@@ -442,7 +445,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/interzicere/interzis_marfuri_periculoase.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/interzicere/interzis_marfuri_periculoase.png.webp">
                     <p>
                         <strong> Accesul interzis vehiculelor care transporta marfuri periculoase</strong><br>
                         Indicatorul din imaginea alaturata se amplaseaza in locul in care accesul vehiculelor care
@@ -453,5 +456,8 @@
             </div>
             <a id="topBtn" href="#">TOP</a>
         </div>
+        <?php
+            include_once "../../footer.php";
+        ?>
     </body>
 </html>

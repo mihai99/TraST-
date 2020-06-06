@@ -13,16 +13,17 @@
         ?>
         <div class="body-wrapper">
             <div class="cap-nav">
-                <a id="dummy"></a>
-                <a href="../../m_invatare.php" id="home">CAPITOLUL I: Dispoziții generale</a>
-                <a href="cap2.php" id="next">Capitolul 2</a>
+                <a href="cap3.php" id="prev">Capitolul 3</a>
+                <a href="../../invatare.php" id="home">CAPITOLUL IV: Semnalizarea rutieră</a>
+                <a href="cap5.php" id="next">Capitolul 5</a>
             </div>
             <?php
-                include_once "cap1.html";
+            include_once "cap4.html";
             ?>
         </div>
         <?php
             include_once '../../footer.php';
         ?>
     </body>
+
 </html>

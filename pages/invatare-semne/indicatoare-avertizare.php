@@ -7,30 +7,33 @@
         <link rel="stylesheet" type="text/css" href="../../styles/invatare/indicatoare.css">
     </head>
     <body>
-        <div class="body-wrapper">
+        <?php
+            include_once "../../header.php";
+        ?>
+        <div class="body-wrapper inv-body-container">
             <div class="cap-nav">
-                <a href="indicatoare-prioritate.html">
+                <a href="indicatoare-prioritate.php">
                     Indicatoare rutiere de prioritate
                 </a>
-                <a href="indicatoare-interzicere.html">
+                <a href="indicatoare-interzicere.php">
                     Indicatoare de interzicere sau restrictie
                 </a>
-                <a href="indicatoare-obligare.html">
+                <a href="indicatoare-obligare.php">
                     Indicatoare rutiere de obligare
                 </a>
-                <a href="indicatoare-informare.html">
+                <a href="indicatoare-informare.php">
                     Indicatoare rutiere de informare
                 </a>
-                <a href="indicatoare-orientare.html">
+                <a href="indicatoare-orientare.php">
                     Indicatoare rutiere de orientare
                 </a>
-                <a href="indicatoare-lucrari.html">
+                <a href="indicatoare-lucrari.php">
                     Indicatoare semnalizare lucrari pe carosabil
                 </a>
             </div>
             <div class="page-container">
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/curba_la_stanga.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/curba_la_stanga.png.webp">
                     <p>
                         <strong> Curbă la stânga</strong><br>
                         Este amplasat la cel mult 200 m de o curbă la stânga. Conducătorul trebuie să circule cu viteză
@@ -39,7 +42,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/curba_la_dreapta.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/curba_la_dreapta.png.webp">
                     <p>
                         <strong> Curbă la dreapta</strong><br>
                         Este amplasat la cel mult 200 m de o curbă la dreapta. Conducătorul auto trebuie să circule cu
@@ -48,7 +51,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/curba_dubla_dreapta.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/curba_dubla_dreapta.png.webp">
                     <p>
                         <strong> Curbă dublă sau o succesiune de mai multe curbe, prima la stânga</strong><br>
                         Indicatorul din imagine se instalează atunci când urmează o succesiune de curbe, dacă distanţa
@@ -60,7 +63,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/curba_dubla_stanga.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/curba_dubla_stanga.png.webp">
                     <p>
                         <strong> Curbă dublă sau o succesiune de mai multe curbe, prima la dreapta</strong><br>
                         Indicatorul din imagine se instalează atunci când urmează o succesiune de curbe, dacă distanţa
@@ -72,7 +75,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/Curba-periculoasa.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/Curba-periculoasa.jpg">
                     <p>
                         <strong> Curbă deosebit de periculoasă</strong><br>
                         Acest indicator se montează în curbe cu raze mai mici de 100 m, sensul săgeţilor indicând sensul
@@ -81,7 +84,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/Panouri-succesive-curbe.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/Panouri-succesive-curbe.jpg">
                     <p>
                         <strong> Panouri succesive pentru curbe deosebit de periculoase</strong><br>
                         Se instalează câte 5 astfel de panouri în curbe cu raze mai mici de 100 m sau în curbe
@@ -90,7 +93,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/coborare_periculoasa.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/coborare_periculoasa.png.webp">
                     <p>
                         <strong> Coborâre periculoasă</strong><br>
                         Indicatorul alăturat se amplasează la 100-200 m de începutul sectorului de drum, când panta
@@ -101,7 +104,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/urcare_cu_inclinare_mare.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/urcare_cu_inclinare_mare.png.webp">
                     <p>
                         <strong> Urcare cu inclinare mare</strong><br>
                         Se instalează la 100-200 m de începutul sectorului de drum, când panta depăşeşte 7%.
@@ -111,7 +114,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/drum_ingustat_stanga.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/drum_ingustat_stanga.png.webp">
                     <p>
                         <strong> Drum ingustat pe partea stângă</strong><br>
                         Indicatoarele din imaginile alăturate se amplasează la 100-200 m de locul în care sectorul de
@@ -123,7 +126,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/drum_ingustat__dreapta.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/drum_ingustat__dreapta.png.webp">
                     <p>
                         <strong> Drum ingustat pe partea dreapta</strong><br>
                         Indicatoarele din imaginile alăturate se amplasează la 100-200 m de locul în care sectorul de
@@ -135,7 +138,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/drum_ingustat.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/drum_ingustat.png.webp">
                     <p>
                         <strong> Drum îngustat pe ambele părţi</strong><br>
                         Indicatoarele din imaginile alăturate se amplasează la 100-200 m de locul în care sectorul de
@@ -147,7 +150,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/acostament_periculos.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/acostament_periculos.png.webp">
                     <p>
                         <strong> Acostament periculos</strong><br>
                         Indicatorul rutier se întâlnește de regulă în zone montane, unde acostamentul este denivelat
@@ -156,7 +159,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/drum_aglomerat.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/drum_aglomerat.png.webp">
                     <p>
                         <strong> Drum aglomerat</strong><br>
                         La întâlnirea acestui indicator, Conducătorul auto este obligat să păstreze o distanţă de
@@ -165,7 +168,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/tunel.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/tunel.png.webp">
                     <p>
                         <strong>Tunel</strong><br>
                         Indicatorul din imagine se găseşe la 50-200 m de intrarea în tunel. In tunel, conducătorul auto
@@ -174,7 +177,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/drum_cu_denivelari.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/drum_cu_denivelari.png.webp">
                     <p>
                         <strong> Drum cu denivelări</strong><br>
                         Acest panou se amplasează la 50-200 m de locul periculos. Dacă lungimea sectorului de drum
@@ -184,7 +187,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/denivelari_limitarea_vitezei.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/denivelari_limitarea_vitezei.png.webp">
                     <p>
                         <strong> Denivelare pentru limitarea vitezei</strong><br>
                         Indicatorul rutier se întâlnește în zonele cu școli, grădinițe, treceri pentru pietoni, sectoare
@@ -193,7 +196,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/drum_lunecos.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/drum_lunecos.png.webp">
                     <p>
                         <strong> Drum lunecos</strong><br>
                         Se afla montat la 100-200 m de sectorul periculos. Conducătorul auto este obligat să reducă
@@ -202,7 +205,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/improscare_cu_pietris.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/improscare_cu_pietris.png.webp">
                     <p>
                         <strong> Improşcare cu pietriş</strong><br>
                         Se amplasează la 100-200 m de sectorul de drum periculos. Poate fi însoţit de indicatorul
@@ -214,7 +217,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/caderi_de_pietre.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/caderi_de_pietre.png.webp">
                     <p>
                         <strong> Căderi de pietre</strong><br>
                         Este instalat la 100-200 m de locul periculos. Poate fi însoţit de un panou adiţional pe care
@@ -223,7 +226,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/presemnalizare_trecere_pietoni.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/presemnalizare_trecere_pietoni.png.webp">
                     <p>
                         <strong> Presemnalizare trecere pietoni</strong><br>
                         Se instalează la 50-200 m de o trecere de pietoni, pe drumurile intens circulate, pe sectoarele
@@ -233,7 +236,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/copii.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/copii.png.webp">
                     <p>
                         <strong>Copii</strong><br>
                         Conducătorii auto întalnesc acest indicator pe sectoarele de drum frecvent circulate de copii
@@ -242,7 +245,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/presemnalizare_sens_giratoriu.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/presemnalizare_sens_giratoriu.png.webp">
                     <p>
                         <strong> Presemnalizare intersecţie cu sens giratoriu</strong><br>
                         Se amplasează cu 50-200 m înaintea intersecţiilor cu sens giratoriu. La întâlnirea acestui
@@ -250,7 +253,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/biciclisti.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/biciclisti.png.webp">
                     <p>
                         <strong>Biciclişti</strong><br>
                         Se amplasează la 100-200 m de locul în care drumul public se intersectează cu o pistă pentru
@@ -258,7 +261,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/semafoare.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/semafoare.png.webp">
                     <p>
                         <strong> Semafoare</strong><br>
                         Indicatorul se instalează la 30-200 m de locul în care se afla semaforul, dacă se consideră că
@@ -266,7 +269,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/circulatie_in_ambele_sensuri.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/circulatie_in_ambele_sensuri.png.webp">
                     <p>
                         <strong> Circulaţie în ambele sensuri</strong><br>
                         Indicatorul din imagine este întâlnit la ieşirea de pe un drum public cu sens unic. Are rolul de
@@ -274,7 +277,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/avertizare/alte_pericole.png.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/alte_pericole.png.webp">
                     <p>
                         <strong> Alte pericole</strong><br>
                         Se amplasează cu 50-200 m înaintea locului periculos, în orice situaţie periculoasă care nu este
@@ -287,5 +290,8 @@
 
             <a id="topBtn" href="#">TOP</a>
         </div>
+        <?php
+            include_once "../../footer.php";
+        ?>
     </body>
 </html>

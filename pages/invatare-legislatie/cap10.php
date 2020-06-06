@@ -14,7 +14,7 @@
         <div class="body-wrapper">
             <div class="cap-nav">
                 <a href="cap9.php" id="prev">Capitolul 9</a>
-                <a href="../../m_invatare.php" id="home">CAPITOLUL X: Dispoziții finale</a>
+                <a href="../../invatare.php" id="home">CAPITOLUL X: Dispoziții finale</a>
                 <a id="dummy"></a>
             </div>
             <?php
