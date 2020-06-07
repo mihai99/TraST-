@@ -45,6 +45,7 @@
                             <a href="clasament_rss.php">
                                 <img id="rss-img" alt="" src="images/rss_icon.png">
                             </a>
+                            <button class="main-button">Get Started</button>
                         </div>
                         <div class="highscores-container">
                             <div class="highscores">

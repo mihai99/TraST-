@@ -28,6 +28,7 @@ h1 {
 
 table {
     table-layout: fixed;
+    max-height: 400px;
     width: 100%;
     margin: 20px auto;
     font-size: 18px;
@@ -86,6 +87,7 @@ tr:nth-child(odd) {
 
 td:nth-child(1) {
     text-align: center;
+    width: 50px;
 }
 
 @media screen and (max-width: 850px) {

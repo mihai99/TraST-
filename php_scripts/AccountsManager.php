@@ -1,6 +1,5 @@
 <?php
     require_once('./DatabaseConnectionManager.php');
-    session_start();
 
     class AccountManager
     {
@@ -65,8 +64,6 @@
                 $request->bindParam(':phone', $phone);
                 if ($request->execute()) {
                     $_SESSION['registered'] = true;
-                    echo "Session set: " . $_SESSION['registered'];
-                    sleep(4);
                     header("location:/index.php");
                 } else {
                     header("location:/register.php?error=sqlerror");

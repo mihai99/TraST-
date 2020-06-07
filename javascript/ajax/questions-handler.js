@@ -47,9 +47,11 @@ function beginTest() {
 function sendResponse() {
     if(document.getElementsByClassName("selected-answer")[0]) {
         let answer = "";
-        document.getElementsByClassName("selected-answer").array.forEach(element => {
-            answer += element.firstElementChild.innerHTML;
-        });
+        let selectedElements = document.getElementsByClassName("selected-answer");
+        for(let i=0;i<selectedElements.length;i++) {
+            answer += selectedElements[0].firstElementChild.innerHTML;
+        }
+
         if(answer) {
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
@@ -109,7 +111,10 @@ function postponeQuestion()
     xmlhttp.send();
 }
 function resetAnswer() {
-    document.getElementsByClassName("selected-answer")[0].classList.remove("selected-answer");
+    let answers = document.getElementsByClassName("selected-answer");
+    for(let i=0;i<answers.length;i++) {
+        answers[i].classList.remove("selected-answer");
+    }
 }
 
 function checkIfTestFailed(failedResponses) {

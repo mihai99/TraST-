@@ -1,5 +1,5 @@
 <?php
-    session_start(); 
+    session_start();
     $response = array(
         $_SESSION["currentQuestion"] + count($_SESSION["postponedQuestions"]),
         $_SESSION["correctQuestions"],
