@@ -33,7 +33,7 @@
         echo '<li> <a href="/login.php">Login</a> </li>';
     else {
         $link = "/profile.php?username=" . $_SESSION['username'];
-        echo '<li> <a href=' . $link . ' > Profile</a > </li >
+        echo '<li> <a href="profile.php"' . $link . ' > Profile</a > </li >
                                <li > <a href = "/php_scripts/Logout.php" id = "logout-btn" > Logout</a > </li > ';
             }
         ?>

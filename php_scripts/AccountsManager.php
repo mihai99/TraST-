@@ -3,14 +3,14 @@
 
     class AccountManager
     {
-        private static function getUsersWithUsername($username)
+        public static function getUsersWithUsername($username)
         {
             $sql = "SELECT * FROM users WHERE username='" . $username . "'";
             $result = DatabaseConnectionManager::get_conn()->query($sql);
             return $result->fetchAll();
         }
 
-        private static function getUsersWithEmail($email)
+        public static function getUsersWithEmail($email)
         {
             $sql = "SELECT * FROM users WHERE email='" . $email . "'";
             $result = DatabaseConnectionManager::get_conn()->query($sql);
