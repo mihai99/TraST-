@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@localhost" uuid="86c00fe5-ef5d-4594-8cd8-5006a0ed1877">
-      <driver-ref>oracle</driver-ref>
+    <data-source source="LOCAL" name="trast@localhost" uuid="8a72ea1e-c881-4f5b-88a2-272dfbd6986f">
+      <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
-      <auto-commit>false</auto-commit>
-      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
-      <jdbc-url>jdbc:oracle:thin:@localhost:1521:XE</jdbc-url>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/trast</jdbc-url>
     </data-source>
   </component>
 </project>

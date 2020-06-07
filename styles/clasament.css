@@ -18,14 +18,15 @@ h1 {
 }
 
 .left-table, .right-table {
-    padding: 20px;
     width: 50%;
     min-width: 300px;
+    max-height: 400px;
+    overflow-y: scroll;
+    margin: 0 0 40px 80px;
 }
 
 table {
     table-layout: fixed;
-    max-height: 400px;
     width: 100%;
     margin: 20px auto;
     font-size: 18px;
@@ -43,8 +44,13 @@ table caption {
     border-collapse: collapse;
 }
 
-table tbody {
-    overflow-y: auto;
+thead tr {
+    position: relative;
+}
+
+table tbody, table thead {
+    width: 100%;
+    display: block;
 }
 
 table, tr, td, th {
@@ -55,6 +61,7 @@ table, tr, td, th {
 
 td, th {
     padding: 10px 5px;
+    width: auto;
 }
 
 th {
@@ -62,6 +69,7 @@ th {
     color: #dfe6e9;
     padding: 10px 30px;
     font-size: 17px;
+    width: 30%;
 }
 
 tr:nth-child(even) {

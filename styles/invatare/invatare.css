@@ -19,6 +19,10 @@
     background-color: #fff5b3;
 }
 
+.tab {
+    text-indent: 40px;
+}
+
 .semne-info, .semne-circulatie {
     flex: 45%;
     justify-content: center;
@@ -114,9 +118,71 @@
     height: 300px;
 }
 
+.container-intrebari {
+    display: flex;
+}
+
+.container-intrebari-right {
+    float: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-intrebari-right a {
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: auto;
+    margin: 0 30px;
+    text-decoration: none;
+    color: #f5f6fa;
+    transition: .4s linear;
+    background-color: #192a56;
+}
+
+.container-intrebari-right a:hover {
+    transform: scale(1.02);
+    transition: .4s linear;
+}
+
+.container-intrebari-right div {
+    padding: 10px;
+    color: red;
+    display: block;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+}
+
+.container-intrebari-right .completed {
+    color: #00bd00;
+    -webkit-text-stroke-color: #00bd00;
+}
+
+.container-intrebari-right .not-logged {
+    color: red;
+    -webkit-text-stroke-color: red;
+}
+
+.container-intrebari-left {
+    float: left;
+    flex: 1;
+    padding: 20px 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-intrebari-right, .container-intrebari-left {
+        flex: 100%;
+    }
+
+}
+
 @media screen and (max-width: 850px) {
 
-    .semne-circulatie li{
+    .semne-circulatie li {
         align-self: center;
     }
 

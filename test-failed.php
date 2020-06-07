@@ -20,7 +20,7 @@
         </p>
       
         <div class="buttons">
-            <a href="../ivnatare.html" class="main-button">Mediu de invatare</a>
+            <a href="../invatare.html" class="main-button">Mediu de invatare</a>
             <a href="tests-selector.php" class="main-button">Incearca inca un test</a>
             <a href="../progres.html" class="main-button">Vezi progresul</a>
         </div>

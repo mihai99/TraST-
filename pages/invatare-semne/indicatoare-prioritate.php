@@ -7,30 +7,33 @@
         <link rel="stylesheet" type="text/css" href="../../styles/invatare/indicatoare.css">
     </head>
     <body>
-        <div class="body-wrapper">
+        <?php
+            include_once "../../header.php";
+        ?>
+        <div class="body-wrapper inv-body-container">
             <div class="cap-nav">
-                <a href="indicatoare-interzicere.html">
+                <a href="indicatoare-interzicere.php">
                     Indicatoare de interzicere sau restrictie
                 </a>
-                <a href="indicatoare-obligare.html">
+                <a href="indicatoare-obligare.php">
                     Indicatoare rutiere de obligare
                 </a>
-                <a href="indicatoare-avertizare.html">
+                <a href="indicatoare-avertizare.php">
                     Indicatoare rutiere de avertizare
                 </a>
-                <a href="indicatoare-informare.html">
+                <a href="indicatoare-informare.php">
                     Indicatoare rutiere de informare
                 </a>
-                <a href="indicatoare-orientare.html">
+                <a href="indicatoare-orientare.php">
                     Indicatoare rutiere de orientare
                 </a>
-                <a href="indicatoare-lucrari.html">
+                <a href="indicatoare-lucrari.php">
                     Indicatoare semnalizare lucrari pe carosabil
                 </a>
             </div>
             <div class="page-container">
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/prioritate/drum-cu-prioritate.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/prioritate/drum-cu-prioritate.jpg">
                     <p><strong>Drum cu prioritate</strong><br>
                         Indicatorul acesta se instalează la începutul drumului cu prioritate sau înaintea intersecţiilor
                         cu un drum fără prioritate. Are rolul de a anunţa conducătorul auto că are prioritate în
@@ -40,7 +43,7 @@
                         direcţia drumului cu prioritate.</p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/prioritate/cedeaza-trecerea.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/prioritate/cedeaza-trecerea.jpg">
                     <p>
                         <strong>Cedează trecerea</strong><br>
                         Se amplasează pe drumul public fără prioritate, la intersecţia acestuia cu un drum public
@@ -51,7 +54,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/prioritate/Oprire.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/prioritate/Oprire.jpg">
                     <p>
                         <strong>Oprire</strong><br>
                         Indicatorul Oprire este instalat pe drumul public fără prioritate, la intersecţia acestuia cu un
@@ -61,7 +64,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/prioritate/Sfarsit-prioritate.jpg">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/prioritate/Sfarsit-prioritate.jpg">
                     <p>
                         <strong> Sfârşitul drumului cu prioritate</strong><br>
                         Indicatorul se amplasează la 50-200 m de locul unde încetează prioritatea indicatorului “Drum cu
@@ -71,7 +74,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/prioritate/Prioritate-sens-invers.jpg.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/prioritate/Prioritate-sens-invers.jpg.webp">
                     <p>
                         <strong> Prioritate pentru circulaţia din sens invers</strong><br>
                         Se montează pe sectoarele de drum îngustat unde nu au loc să circule două vehicule unul pe lângă
@@ -82,7 +85,7 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img src="../../images/invatare/semne%20circulatie/prioritate/Prioritate-fata-sens-invers.jpg.webp">
+                    <img alt="" src="../../images/invatare/semne%20circulatie/prioritate/Prioritate-fata-sens-invers.jpg.webp">
                     <p>
                         <strong> Prioritate faţă de circulaţia din sens invers</strong><br>
                         Montat pe sectoarele de drum îngustat unde nu au loc sa circule doua vehicule unul pe lângă
@@ -96,5 +99,8 @@
 
             </div>
         </div>
+        <?php
+            include_once "../../footer.php";
+        ?>
     </body>
 </html>

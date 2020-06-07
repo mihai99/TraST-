@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid white;
+    z-index: 999;
 }
 
 a {
@@ -119,6 +120,6 @@ a {
     }
 
     #chk:checked ~ .nav-btns {
-        right: 20px;
+        right: 0px;
     }
 }

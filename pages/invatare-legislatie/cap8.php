@@ -13,12 +13,13 @@
         ?>
         <div class="body-wrapper">
             <div class="cap-nav">
-                <a href="cap4.php" id="prev">Capitolul 4</a>
-                <a href="../../m_invatare.php" id="home">CAPITOLUL V: Reguli de circulație</a>
-                <a href="cap6.php" id="next">Capitolul 6</a>
+                <a href="cap7.php" id="prev">Capitolul 7</a>
+                <a href="../../invatare.php" id="home">CAPITOLUL VIII: Căi de atac împotriva procesului-verbal de
+                    constatare a contravenției</a>
+                <a href="cap9.php" id="next">Capitolul 9</a>
             </div>
             <?php
-            include_once "cap5.html"
+            include_once "cap8.html";
             ?>
         </div>
         <?php

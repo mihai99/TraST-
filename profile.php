@@ -8,7 +8,7 @@
     </head>
     <body onload="getLoggedInUser()">
         <?php
-            include_once 'header.php';
+            include_once 'header.php';         
         ?>
     <iframe id="details-response-frame" name="details-response-frame" onload="changeDetailsResponseArrived()"></iframe>
     <iframe id="password-response-frame" name="password-response-frame" onload="changePasswordResponseArrived()"></iframe>
