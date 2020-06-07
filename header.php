@@ -22,7 +22,7 @@ if (session_status() == PHP_SESSION_NONE) {
     </label>
     <ul class="nav-btns">
         <li>
-            <a href="/m_invatare.php" target="content" class="nav-active">Mediu de invatare</a>
+            <a href="/invatare.php" target="content" class="nav-active">Mediu de invatare</a>
         </li>
         <li>
             <a href="/tests-selector.php" target="content">Chestionare</a>

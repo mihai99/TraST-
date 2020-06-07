@@ -1,6 +1,5 @@
 <?php
     require_once('./DatabaseConnectionManager.php');
-    session_start();
 
     class AccountManager
     {
@@ -55,7 +54,7 @@
                 header("location:/register.php?error=phone");
                 return;
             } else {
-                $sql = "INSERT INTO users VALUES (NULL, :name, :username, :password, :email, :phone);";
+                $sql = "INSERT INTO users VALUES (NULL, :name, :username, :password, :email, :phone,  'http://localhost/images/profiles/default.png' , CURRENT_DATE);";
                 $request = DatabaseConnectionManager::get_conn()->prepare($sql);
                 $request->bindParam(':name', $name);
                 $request->bindParam(':username', $username);
@@ -65,10 +64,9 @@
                 $request->bindParam(':phone', $phone);
                 if ($request->execute()) {
                     $_SESSION['registered'] = true;
-                    echo "Session set: " . $_SESSION['registered'];
-                    sleep(4);
-                    header("location:/index.php");
+                    AccountManager::loginUser($username, $password);
                 } else {
+                    print_r($request->errorInfo());
                     header("location:/register.php?error=sqlerror");
                 }
             }
@@ -76,10 +74,11 @@
 
         public static function loginUser($username, $password)
         {
-            echo $username, $password;
             if ($username == "" || $password == "")
-                header("location:/login.php?error=empty%20fields&username=" . $_POST['lusername']);
+                header("location:/login.php?error=emptyFields");
             else {
+                
+            
                 $usersResult = AccountManager::getUsersWithUsername($username);
                 if (count($usersResult) > 0) {
                     foreach ($usersResult as $account) {
@@ -88,6 +87,7 @@
                             $_SESSION['username'] = $username;
                             $_SESSION['email'] = $account['email'];
                             $_SESSION['logged_in'] = true;
+                            $_SESSION['register_date'] = $account['register_date'];
                             $progress = AccountManager::getUserProgress($account['id']);
 
                             $_SESSION['progres'] = intval($progress[1]) + 1;
@@ -95,8 +95,7 @@
                             $_SESSION['chestionare_corecte'] = $progress[3];
 
                             $_SESSION['intrebari_totale'] = AccountManager::getTotalQuestions()['cnt'] + 1;
-
-                            header("location:/index.php");
+                            header("location:/profile.php");
                             exit();
                         }
                     }

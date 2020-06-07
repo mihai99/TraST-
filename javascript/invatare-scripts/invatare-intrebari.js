@@ -12,8 +12,8 @@ function loadQuestion() {
             let current = document.getElementById('current-q');
             current.innerHTML = parseInt(response['id']) + 1;
             document.getElementById('remain-q').innerHTML = total.innerHTML - current.innerHTML + 1;
-            document.getElementById('answer-message-correct').style.visibility = "hidden";
-            document.getElementById('answer-message-wrong').style.visibility = "hidden";
+            document.getElementById('answer-message-correct').style.display = "none";
+            document.getElementById('answer-message-wrong').style.display = "none";
             let imagePath = response["imagePath"];
             if (imagePath === "") {
                 document.getElementById("questionImage").style.display = "none";
@@ -53,12 +53,12 @@ function checkAnswer() {
                     setTimeout(function () {
                         updateQuestion();
                     }, 1200);
-                    document.getElementById('answer-message-wrong').style.visibility = "hidden";
-                    document.getElementById('answer-message-correct').style.visibility = "visible";
+                    document.getElementById('answer-message-wrong').style.display = "none";
+                    document.getElementById('answer-message-correct').style.display = "block";
                     document.getElementById('button-send').disabled = true;
                 } else {
-                    document.getElementById('answer-message-correct').style.visibility = "hidden";
-                    document.getElementById('answer-message-wrong').style.visibility = "visible";
+                    document.getElementById('answer-message-correct').style.display = "none";
+                    document.getElementById('answer-message-wrong').style.display = "block";
                 }
             }
         };
@@ -87,4 +87,11 @@ function updateQuestion() {
     xmlhttp.open("POST", requestURL, true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send();
+}
+
+function resetAnswer() {
+    let answers = document.getElementsByClassName("answer");
+    for(let i=0;i<answers.length;i++) {
+        answers[i].classList.remove("selected-answer");
+    }
 }

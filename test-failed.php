@@ -18,7 +18,7 @@
         <p class="score strong-red">
             21/26
         </p>
-      
+
         <div class="buttons">
             <a href="../invatare.html" class="main-button">Mediu de invatare</a>
             <a href="tests-selector.php" class="main-button">Incearca inca un test</a>

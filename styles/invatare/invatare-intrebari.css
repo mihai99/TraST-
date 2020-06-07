@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    margin-left: 80px;
+    margin-top: 48px;
 }
 
 .test {
@@ -20,10 +20,10 @@
 
 .top-info {
     display: flex;
-    width: 80%;
     font-weight: 600;
     font-size: 20px;
     margin-top: 10px;
+    justify-content: center;
 }
 
 .top-info p {
@@ -33,7 +33,7 @@
 }
 
 .top-info-section {
-    width: 18%;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -58,6 +58,7 @@
 
 #all-questions {
     color: blue;
+    border-left: 2px solid black;
 }
 
 #remaining-questions, #correct-answers {
@@ -104,16 +105,24 @@
 #answer-message-correct {
     font-size: 26px;
     color: #00bd00;
+    text-align: center;
 }
 
 #answer-message-wrong {
     font-size: 22px;
     color: #eb2f06;
+    text-align: center;
 }
 
 img.question-image {
     width: 30%;
     margin-left: 50px;
+}
+.intrebari-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .answer p {
@@ -156,9 +165,12 @@ img.question-image {
     width: 80%;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     margin-top: 20px;
 }
-
+.bottom-buttons .buttons { 
+    display: flex;
+}
 .secondary-button {
     width: 30%;
     height: 50px;
@@ -191,7 +203,6 @@ img.question-image {
 @media (max-width: 750px) {
     .question-bottom-section {
         flex-direction: column-reverse;
-        height: 600px;
     }
 
     img.question-image {
@@ -205,6 +216,19 @@ img.question-image {
     }
 
     .top-info {
+        width: 100%;
+    }
+    .main-container {
+        width: 100%;
+    }
+
+    .question {
+        width: 100%;
+    }
+    .bottom-buttons {
+        width: 100%;
+    }
+    .buttons {
         width: 100%;
     }
 }

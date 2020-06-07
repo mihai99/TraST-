@@ -9,30 +9,33 @@ h1 {
 .tables-body {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
     align-content: flex-start;
     align-items: flex-start;
-    width: 100%;
     background-color: #fff5b3;
+    margin-top: 100px !important;
+    padding-bottom: 50px !important;
 }
 
 .left-table, .right-table {
-    width: 50%;
-    min-width: 300px;
-    max-height: 400px;
+    width: calc(50% - 8px);
+    max-height: 500px;
     overflow-y: scroll;
-    margin: 0 0 40px 80px;
+    margin: 4px;
+    margin-top: 50px;
 }
-
+tr th:first-of-type {
+    width: 15px;
+}
 table {
     table-layout: fixed;
+    max-height: 400px;
     width: 100%;
-    margin: 20px auto;
     font-size: 18px;
     flex: 0 1 auto;
     align-self: auto;
     overflow-y: auto;
+    margin-top: ;
 }
 
 table caption {
@@ -48,9 +51,12 @@ thead tr {
     position: relative;
 }
 
+table thead {
+    position: relative;
+}
+
 table tbody, table thead {
     width: 100%;
-    display: block;
 }
 
 table, tr, td, th {
@@ -62,12 +68,13 @@ table, tr, td, th {
 td, th {
     padding: 10px 5px;
     width: auto;
+    text-align: center;
 }
 
 th {
     background-color: #0984e3;
     color: #dfe6e9;
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-size: 17px;
     width: 30%;
 }
@@ -84,9 +91,19 @@ td:nth-child(1) {
     text-align: center;
     width: 50px;
 }
-
+@media screen and (max-width: 1200px) {
+    .tables-body {
+        justify-content: center;
+    }
+    .left-table, .right-table {
+        width: 80%;
+    }
+}
 @media screen and (max-width: 850px) {
-    table {
+    .tables-body {
+        display: 100%;
+    }
+    .left-table, .right-table {
         width: 100%;
     }
 }

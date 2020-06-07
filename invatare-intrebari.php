@@ -42,14 +42,7 @@
                 </div>
             </div>
             <div class="intrebari-content">
-                <div class="question">
-                    <?php
-                        if (isset($_SESSION['wrong-answer'])) {
-                            echo '<p id="wrong-answer">Ati raspuns gresit!</p>';
-                            unset($_SESSION['wrong-answer']);
-                        }
-                    ?>
-                </div>
+              
                 <div class="question">
                     <div class="question-body" id="question-body">
                     </div>
@@ -72,16 +65,19 @@
                     </div>
                 </div>
                 <div class="bottom-buttons">
-                    <button id="button-send" class="secondary-button" onclick="checkAnswer()">
-                        Trimite raspunsul
-                    </button>
-                    <span id="answer-message-correct">Corect!</span>
+                <span id="answer-message-correct">Corect!</span>
                     <span id="answer-message-wrong">Gresit! Mai incearca.</span>
+                    <div class="buttons">
+                        <button id="button-delete" class="secondary-button" onclick="resetAnswer()">Sterge raspunsul</button>
+                        <button id="button-send" class="secondary-button" onclick="checkAnswer()">
+                            Trimite raspunsul
+                        </button>
+                  
+                    </div>
+                    
+                   
                 </div>
             </div>
         </div>
-        <?php
-            include_once "footer.php";
-        ?>
     </body>
 </html>

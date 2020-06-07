@@ -111,7 +111,7 @@ function postponeQuestion()
     xmlhttp.send();
 }
 function resetAnswer() {
-    let answers = document.getElementsByClassName("selected-answer");
+    let answers = document.getElementsByClassName("answer");
     for(let i=0;i<answers.length;i++) {
         answers[i].classList.remove("selected-answer");
     }

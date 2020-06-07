@@ -5,6 +5,7 @@
     if (isset($_POST['lsubmit'])) {
         $username = $_POST['lusername'];
         $password = $_POST['lpassword'];
+        //TODO: Remember me
         $remember = $_POST['lremember-me'];
 
         AccountManager::loginUser($username, $password);

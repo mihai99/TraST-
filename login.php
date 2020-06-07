@@ -14,7 +14,7 @@
             <?php
                 if (isset($_GET['error'])) {
                     $error = $_GET['error'];
-                    if ($error == "empty fields") {
+                    if ($error == "emptyFields") {
                         echo "<p>Toate campurile trebuie completate!</p>";
                     } else {
                         echo "<p>User-ul sau parola gresita!</p>";

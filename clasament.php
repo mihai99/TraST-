@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <title>TraST</title>
         <link rel="stylesheet" href="styles/clasament.css">
+        <link rel="alternate" href="/clasament_rss.php" title="TraST | RSS Top utilizatori" type="application/rss+xml"/>
     </head>
     <body>
         <?php
             include_once 'header.php';
         ?>
-        <h1>Topul celor mai sarguinciosi</h1>
-        <div class="tables-body">
+        <div class="tables-body body-wrapper">
             <div class="left-table">
                 <table id="table1">
                     <caption>Topul utilizatorilor in functie de numarul de chestionare rezolvate</caption>
@@ -33,7 +33,6 @@
                     </tbody>
                 </table>
             </div>
-            <div style="clear: both"></div>
             <div class="right-table">
                 <table id="table2">
                     <caption>Topul utilizatorilor in functie de numarul de intrebari parcurse</caption>
@@ -54,8 +53,6 @@
                 </table>
             </div>
         </div>
-        <?php
-            include_once 'footer.php';
-        ?>
+      
     </body>
 </html>
