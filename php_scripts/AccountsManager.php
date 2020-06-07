@@ -27,7 +27,7 @@
 
         public static function getTotalQuestions()
         {
-            $sql = 'SELECT MAX(id) AS cnt FROM questions';
+            $sql = 'SELECT COUNT("a") AS cnt FROM questions';
 
             $result = DatabaseConnectionManager::get_conn()->query($sql);
             return $result->fetch();
@@ -76,6 +76,7 @@
 
         public static function loginUser($username, $password)
         {
+            echo $username, $password;
             if ($username == "" || $password == "")
                 header("location:/login.php?error=empty%20fields&username=" . $_POST['lusername']);
             else {
@@ -105,8 +106,10 @@
                     header("location:/login.php?error=user%20not%20found");
                     exit();
                 }
+                header("location:/login.php?error=user%20not%20found");
+                exit();
             }
-
+            
 
         }
     }

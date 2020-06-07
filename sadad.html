@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="1000" height="800" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+let width = 1000;
+let height = 800;
+let horizontalPoints = 10;
+let verticalPoints = 8;
+
+let points = [{x:1, y:2}, {x:3, y:4}, {x: 4, y:1}, {x:6, y:3},{x:8, y:1}, {x:9, y:7.5}];
+
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.font = "16px Arial";
+
+ctx.moveTo(20, 20);
+ctx.lineTo(20, height-20);
+for(let i=0; i<=verticalPoints; i++) {
+	ctx.moveTo(20, height-20-i*(height-40)/verticalPoints);
+    ctx.lineTo(30, height-20-i*(height-40)/verticalPoints);
+    ctx.fillText(i, 0,  height-15-i*(height-40)/verticalPoints);
+}
+
+ctx.moveTo(20, height-20);
+ctx.lineTo(width-20, height-20);
+for(let i=0; i<=horizontalPoints; i++) {
+	ctx.moveTo(20+i*(width-40)/horizontalPoints, height-20);
+    ctx.lineTo(20+i*(width-40)/horizontalPoints, height-30);
+    ctx.fillText(i, 20+i*(width-40)/horizontalPoints,  height);
+}
+
+ctx.stroke();
+ctx.closePath();
+
+let vericalScale = (height-40)/verticalPoints ;
+let horizontalScale = (width-40)/horizontalPoints;
+for(let i=1;i<points.length;i++) {
+	let oldhPoint = 20+points[i-1].x*horizontalScale;
+    let oldvPoint = height-20 - points[i-1].y*vericalScale;
+	let hPoint = 20+points[i].x*horizontalScale;
+    let vPoint = height-20 - points[i].y*vericalScale;
+    ctx.beginPath();
+    if(points[i-1].y > points[i].y) {
+    	ctx.strokeStyle = '#ff0000';
+    } else {
+    	ctx.strokeStyle = '#4CAF50';
+    }
+    ctx.moveTo(oldhPoint, oldvPoint);
+    ctx.lineTo(hPoint, vPoint);
+    ctx.stroke();
+	ctx.closePath();
+}
+
+
+
+</script>
+
+</body>
+</html>

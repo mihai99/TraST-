@@ -19,6 +19,9 @@
                     } else {
                         echo "<p>User-ul sau parola gresita!</p>";
                     }
+                } else {
+                    if(isset($_SESSION["username"])) 
+                        echo "<script>window.location.href='index.php';</script>";
                 }
             ?>
             <form action="php_scripts/Login.php" method="post">
@@ -31,7 +34,7 @@
                 <input type="checkbox" name="lremember-me" id="remember-me">
                 <label for="remember-me" id="remember-me-lbl">Remember me</label>
 
-                <input type="submit" name="lsubmit">
+                <input type="submit" name="lsubmit" value="Login" class="main-button">
             </form>
             <a href="register.php">Nu ai cont? Click aici pentru a creea unul!</a>
         </div>

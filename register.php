@@ -51,7 +51,7 @@
                 <label for="phone-register">Phone*:</label>
                 <input type="text" name="rphone" id="phone-register" autocomplete="off">
 
-                <input type="submit" name="rsumbit">
+                <input type="submit" name="rsumbit" value="Register" class="main-button">
                 <a href="login.php">Ai deja cont? Click aici pentru a te conecta!</a>
             </form>
         </div>

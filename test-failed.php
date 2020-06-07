@@ -25,9 +25,7 @@
             <a href="../progres.html" class="main-button">Vezi progresul</a>
         </div>
     </div>
-    <?php
-        include_once 'footer.php';
-    ?>
+   
     
 </body>
 </html>
