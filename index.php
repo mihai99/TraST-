@@ -42,7 +42,9 @@
                                 consequatur
                                 ipsa ipsam quod ducimus?
                             </p>
-                            <button class="main-button">Get Started</button>
+                            <a href="clasament_rss.php">
+                                <img id="rss-img" alt="" src="images/rss_icon.png">
+                            </a>
                         </div>
                         <div class="highscores-container">
                             <div class="highscores">

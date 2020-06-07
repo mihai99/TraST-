@@ -31,11 +31,14 @@
             <a href="/clasament.php" target="content">Clasament</a>
         </li>
         <?php
-            if (!isset($_SESSION['username']))
+            //pentru user logat, afiseaza buton de logout, altfel afiseaza buton de login
+            if (!isset($_SESSION['username'])) {
+                echo '<li> <a href="profile.php">Profiluri</a>';
                 echo '<li> <a href="/login.php">Login</a> </li>';
+            }
             else {
                 $link = "/profile.php?username=" . $_SESSION['username'];
-                echo '<li> <a href=' . $link . ' > Profile</a > </li >
+                echo '<li> <a href=' . $link . ' >Profil</a > </li >
                                <li > <a href = "/php_scripts/Logout.php" id = "logout-btn" > Logout</a > </li > ';
             }
         ?>

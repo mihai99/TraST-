@@ -55,7 +55,7 @@
                 header("location:/register.php?error=phone");
                 return;
             } else {
-                $sql = "INSERT INTO users VALUES (NULL, :name, :username, :password, :email, :phone);";
+                $sql = "INSERT INTO users VALUES (NULL, :name, :username, :password, :email, :phone, CURRENT_DATE);";
                 $request = DatabaseConnectionManager::get_conn()->prepare($sql);
                 $request->bindParam(':name', $name);
                 $request->bindParam(':username', $username);
@@ -87,6 +87,7 @@
                             $_SESSION['username'] = $username;
                             $_SESSION['email'] = $account['email'];
                             $_SESSION['logged_in'] = true;
+                            $_SESSION['register_date'] = $account['register_date'];
                             $progress = AccountManager::getUserProgress($account['id']);
 
                             $_SESSION['progres'] = intval($progress[1]) + 1;
