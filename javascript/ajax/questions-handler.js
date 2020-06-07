@@ -1,5 +1,5 @@
 function beginTest() {
-    
+
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
@@ -13,15 +13,16 @@ function beginTest() {
     xmlhttp.open("POST", requestURL);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send();
-    
+
   }
 
-  function getQuestion() {    
+  function getQuestion() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
+            console.log(JSON.parse(this.responseText));
                 let response = JSON.parse(this.responseText);
-                
+
                 document.getElementById("answer1text").innerHTML = response["answer1"];
                 document.getElementById("answer2text").innerHTML = response["answer2"];
                 document.getElementById("answer3text").innerHTML = response["answer3"];
@@ -40,23 +41,28 @@ function beginTest() {
     xmlhttp.open("POST", requestURL);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send();
-    
+
 }
 
 function sendResponse() {
     if(document.getElementsByClassName("selected-answer")[0]) {
-        let answer = document.getElementsByClassName("selected-answer")[0].firstElementChild.innerHTML;
+        let answer = "";
+        let selectedElements = document.getElementsByClassName("selected-answer");
+        for(let i=0;i<selectedElements.length;i++) {
+            answer += selectedElements[0].firstElementChild.innerHTML;
+        }
+
         if(answer) {
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
                 if (this.readyState === 4 && this.status === 200) {
-                       console.log(this.responseText);   
                        updateTexts();
                        resetAnswer();
                        getQuestion();
                 }
             };
             const requestURL = "/php_scripts/CheckAnswer.php?answer=" + answer;
+            console.log(answer);
             xmlhttp.open("GET", requestURL);
             xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             xmlhttp.send();
@@ -70,6 +76,7 @@ function updateTexts() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
+            console.log(this.responseText);
             const response = JSON.parse(this.responseText);
             const answersNumber = response[0];
             const correctNumber = response[1];
@@ -79,8 +86,8 @@ function updateTexts() {
             document.getElementById("remaining-questions").innerHTML = 26 - answersNumber + "<p>Intrebari totale</p>";
             document.getElementById("corrent-answers").innerHTML = correctNumber + "<p>Raspunsuri corecte</p>";
             document.getElementById("wrong-answers").innerHTML = wrongNumber + "<p>Raspunsuri gresite</p>";
-            console.log("updated");                                  
-                
+            console.log("updated");
+
         }
     };
     const requestURL = "/php_scripts/GetQuestionsNubers.php";
@@ -93,9 +100,9 @@ function postponeQuestion()
 {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
-        if (this.readyState === 4 && this.status === 200) {          
-            console.log("question postponed");                   
-            getQuestion();                 
+        if (this.readyState === 4 && this.status === 200) {
+            console.log("question postponed");
+            getQuestion();
         }
     };
     const requestURL = "/php_scripts/PostponeQuestion.php";
@@ -104,7 +111,10 @@ function postponeQuestion()
     xmlhttp.send();
 }
 function resetAnswer() {
-    document.getElementsByClassName("selected-answer")[0].classList.remove("selected-answer");
+    let answers = document.getElementsByClassName("selected-answer");
+    for(let i=0;i<answers.length;i++) {
+        answers[i].classList.remove("selected-answer");
+    }
 }
 
 function checkIfTestFailed(failedResponses) {

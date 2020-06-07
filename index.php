@@ -14,7 +14,7 @@
         <title>TRaST</title>
     </head>
 
-    <body onresize="adjustContentHeight()">
+    <body>
 
         <?php
             include_once 'header.php';
@@ -42,6 +42,9 @@
                                 consequatur
                                 ipsa ipsam quod ducimus?
                             </p>
+                            <a href="clasament_rss.php">
+                                <img id="rss-img" alt="" src="images/rss_icon.png">
+                            </a>
                             <button class="main-button">Get Started</button>
                         </div>
                         <div class="highscores-container">
@@ -319,26 +322,10 @@
         <?php
             include_once 'footer.php';
         ?>
-        <script>
-            showLoginModal();
-            var iframeContent = document.getElementById("content").contentWindow.location.href;
-            window.onbeforeunload = function () {
-                iframeContent = document.getElementById("content").contentWindow.location.href;
-                setCookie("loadedPage", iframeContent, 1);
-            }
-            window.onload = function () {
-                var iframePage = getCookie("loadedPage");
-                if (!iframePage || iframePage === "") {
-                    document.getElementById('content').src = "./pages/homepage.html";
-                } else {
-                    document.getElementById('content').src = getCookie("loadedPage");
-                }
-            }
-        </script>
         <?php
             if (isset($_SESSION['logged_in'])) {
                 unset($_SESSION['logged_in']);
-                echo '<div id="login-success"><p>Ati fost logat cu succes!</p></div>';
+                echo '<div id="login-success"><p>V-ati logat cu succes!</p></div>';
             }
             if (isset($_SESSION['logged_out'])) {
                 unset($_SESSION['logged_out']);
