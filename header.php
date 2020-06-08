@@ -1,7 +1,7 @@
 <?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
 ?>
 
 <style>
@@ -14,7 +14,7 @@ if (session_status() == PHP_SESSION_NONE) {
 <nav class="topnav">
     <script src="https://kit.fontawesome.com/a03919215d.js" crossorigin="anonymous"></script>
     <a href="/index.php" target="content">
-        <img src="/images/cover.png" class="logo">
+        <img alt="" src="/images/cover.png" class="logo">
     </a>
     <input type="checkbox" id="chk">
     <label for="chk" class="show-menu-btn">
@@ -31,13 +31,18 @@ if (session_status() == PHP_SESSION_NONE) {
             <a href="/clasament.php" target="content">Clasament</a>
         </li>
         <?php
-        if (!isset($_SESSION['username']))
-            echo '<li> <a href="/login.php">Login</a> </li>';
-        else {
-            $link = "/profile.php?username=" . $_SESSION['username'];
-            echo '<li> <a href="profile.php"' . $link . ' > Profile</a > </li >
+            if (!isset($_SESSION['username']))
+                echo '<li> <a href="/login.php">Login</a> </li>';
+            else {
+                echo '<li> <a href="profile.php">';
+                if (isset($_SESSION['admin']) && $_SESSION['admin'] == true) {
+                    echo 'Admin panel';
+                } else {
+                    echo 'Profile';
+                }
+                echo '</a > </li >
                                <li > <a href = "/php_scripts/Logout.php" id = "logout-btn" > Logout</a > </li > ';
-        }
+            }
         ?>
         <li>
             <label for="chk" class="hide-menu-btn" onclick="closeMobileMenu()">

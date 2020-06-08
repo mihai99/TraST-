@@ -32,6 +32,16 @@
             return $result->fetch();
         }
 
+        private static function testIfAdmin($userId)
+        {
+            $sql = "SELECT * FROM admins WHERE user_id=" . $userId;
+            $req = DatabaseConnectionManager::get_conn()->query($sql);
+            echo $req->rowCount();
+            if ($req->rowCount() > 0)
+                return true;
+            return false;
+        }
+
 
         public static function registerUser($name, $username, $password, $repeatedPassword, $email, $phone)
         {
@@ -77,8 +87,8 @@
             if ($username == "" || $password == "")
                 header("location:/login.php?error=emptyFields");
             else {
-                
-            
+
+
                 $usersResult = AccountManager::getUsersWithUsername($username);
                 if (count($usersResult) > 0) {
                     foreach ($usersResult as $account) {
@@ -90,12 +100,16 @@
                             $_SESSION['register_date'] = $account['register_date'];
                             $progress = AccountManager::getUserProgress($account['id']);
 
+                            $is_admin = AccountManager::testIfAdmin($account['id']);
+
+                            $_SESSION['admin'] = $is_admin;
+
                             $_SESSION['progres'] = intval($progress[1]) + 1;
                             $_SESSION['chestionare_totale'] = $progress[2];
                             $_SESSION['chestionare_corecte'] = $progress[3];
 
                             $_SESSION['intrebari_totale'] = AccountManager::getTotalQuestions()['cnt'] + 1;
-                            header("location:/profile.php");
+                            header("location:/index.php");
                             exit();
                         }
                     }
@@ -105,10 +119,8 @@
                     header("location:/login.php?error=user%20not%20found");
                     exit();
                 }
-                header("location:/login.php?error=user%20not%20found");
-                exit();
             }
-            
+
 
         }
     }

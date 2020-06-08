@@ -18,11 +18,6 @@ body {
     animation: login-view 5s forwards;
 }
 
-#rss-img {
-    width: 40px;
-    height: 40px;
-}
-
 @keyframes login-view {
     from {
         opacity: 1;
@@ -85,7 +80,7 @@ body {
 }
 
 .highscores-container {
-    margin: 20px 20px 0px 0px;
+    margin: 20px 20px 0 0;
 }
 
 .highscores-container .highscores {
@@ -133,7 +128,7 @@ table td, table th {
 }
 
 article {
-    margin: 10px 0px;
+    margin: 10px 0;
     width: 24%;
     background: #fff5b3;
     border: 1px solid;
@@ -158,7 +153,7 @@ article .title {
 }
 
 article .date {
-    margin: 0px 20px;
+    margin: 0 20px;
     color: #3b3b3b;
 }
 

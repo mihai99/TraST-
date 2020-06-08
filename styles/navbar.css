@@ -89,7 +89,7 @@ a {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1160px) {
     .show-menu-btn, .hide-menu-btn {
         display: block;
     }
@@ -120,6 +120,6 @@ a {
     }
 
     #chk:checked ~ .nav-btns {
-        right: 0px;
+        right: 0;
     }
 }

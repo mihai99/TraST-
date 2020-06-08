@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="../styles/general.css">
-    <link rel="stylesheet" type="text/css" href="../styles/porfile.css">
+    <link rel="stylesheet" type="text/css" href="../styles/profile.css">
     
 </head>
 <body>
