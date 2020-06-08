@@ -13,7 +13,9 @@ h1 {
     align-content: flex-start;
     align-items: flex-start;
     background-color: #fff5b3;
-    margin-top: 100px !important;
+    margin-top: 20px !important;
+    padding-bottom: 50px !important;
+    border: 2px solid;
     padding-bottom: 50px !important;
 }
 
@@ -35,9 +37,24 @@ table {
     flex: 0 1 auto;
     align-self: auto;
     overflow-y: auto;
-    margin-top: ;
+    margin-top: 20px;
 }
-
+.rss-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff5b3;
+    border: 2px solid;
+    margin-top: 50px;
+}
+.rss-container p {
+    margin-right: 50px;
+}
+#rss-img {
+    width: 40px;
+    height: 40px;
+}
 table caption {
     background-color: #0984e3;
     color: #dfe6e9;

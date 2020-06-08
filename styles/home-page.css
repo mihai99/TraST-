@@ -18,10 +18,6 @@ body {
     animation: login-view 5s forwards;
 }
 
-#rss-img {
-    width: 40px;
-    height: 40px;
-}
 
 @keyframes login-view {
     from {

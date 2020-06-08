@@ -10,6 +10,12 @@
         <?php
             include_once 'header.php';
         ?>
+         <div class="rss-container">
+             <p>Descarca fisierul RSS</p>
+             <a href="clasament_rss.php">
+                 <img id="rss-img" alt="" src="images/rss_icon.png">
+             </a>
+         </div>
         <div class="tables-body body-wrapper">
             <div class="left-table">
                 <table id="table1">

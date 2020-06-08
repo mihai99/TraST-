@@ -6,17 +6,19 @@ function getSearchedUsers(searchInput) {
             if (this.readyState === 4 && this.status === 200) {
                 let searchedUsers = JSON.parse(this.responseText);
                 if(searchedUsers.length > 0) {
-                    parent.style.display = "block";
+                    parent.classList.add("show-item");
+                    parent.classList.remove("hide-item");
                     parent.innerHTML = "";
                     for(let i=0; i<searchedUsers.length; i++) {
                         let text = '<div class="person">';
                         text += '<div class="name">' + searchedUsers[i].name + '</div>';
-                        text += '<button class="secondary-button" onclick="compareUsers(searchedUsers[i].id)">Compara progresia</button>';
+                        text += '<button class="secondary-button" onclick="compareUsers('+searchedUsers[i].id+')">Compara progresia</button>';
                         text += '</div>';
                         parent.innerHTML += text;
                     }
                 } else {
-                    parent.style.display = "none";
+                    parent.classList.remove("show-item");
+                    parent.classList.add("hide-item");
                 }
             }
         };
@@ -26,7 +28,8 @@ function getSearchedUsers(searchInput) {
         xmlhttp.send();
 
     } else {
-        parent.style.display = "none";
+        parent.classList.remove("show-item");
+        parent.classList.add("hide-item");
     }
     
 }
@@ -35,8 +38,9 @@ function getLoggedInUser() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
-            console.log(this.responseText);            
             const user = JSON.parse(this.responseText);
+            console.log(user);
+            
             document.getElementById("profile-image").src = user.imageLink;
             document.getElementById("user-name").innerHTML = "Nume: " + user.name;
             document.getElementById("user-username").innerHTML = "Username: " + user.username;
@@ -49,6 +53,32 @@ function getLoggedInUser() {
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send();
 }
+
+
+function getComparingnUser(id) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+            if(this.responseText != "error") {
+                const user = JSON.parse(this.responseText);
+                if(user.imageLink != "") {
+                    document.getElementById("compare-image").src = user.imageLink;
+                } else {
+                    document.getElementById("compare-image").src = "./../images/profiles/default.png";
+                }
+                document.getElementById("compare-name").innerHTML = "Nume: " + user.name;
+                document.getElementById("compare-phone").innerHTML = "Telefon: " + user.phone;
+                document.getElementById("compare-email").innerHTML = "Email: " + user.email;
+
+            }
+        }
+    };
+    const requestURL = "/php_scripts/GetComparingUserInfo.php?id="+id;
+    xmlhttp.open("GET", requestURL);
+    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp.send();
+}
+
 function changeDetailsResponseArrived() {
     let response = document.getElementById("details-response-frame").contentWindow.document.body.innerHTML;
     if(response == 1) {

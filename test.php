@@ -58,10 +58,7 @@
             <button id="button-send" class="secondary-button" onclick="sendResponse()">Trimite raspunsul</button>
         </div>
     </div>
-    <?php
-        include_once 'footer.php';
-    ?>
-
+ 
     <script>
         parent.scroll(0, 0);
         var seconds = 1800;

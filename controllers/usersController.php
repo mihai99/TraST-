@@ -51,6 +51,10 @@
             $loggedUser->UpdatePassword($newPassword);
             return true;
         }
+
+        public static function GetUserById($id) {
+            return UserModel::GetUserById($id);
+        }
     }
 
 ?>

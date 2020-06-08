@@ -16,13 +16,22 @@
             Ai trecut testul cu brio!
         </p>
         <p class="score strong-green">
-            21/26
+        <?php 
+                echo $_SESSION["correctQuestions"] . "/26";
+                error_reporting(0);
+                include dirname(__FILE__) . "//models//testProgressModel.php";
+                TestProgressModel::PassTest();
+            ?>
         </p>
 
         <div class="buttons">
             <a href="/clasament.php" class="main-button">Clasament</a>
             <a href="tests-selector.php" class="main-button">Incearca inca un test</a>
-            <a href="/progres.php" class="main-button">Vezi progresul</a>
+            <?php
+                if(isset($_SESSION["id"])) {
+                    echo '<a href="../profile.php" class="main-button">Vezi progresul</a>';
+                }
+            ?>
         </div>
     </div>
    

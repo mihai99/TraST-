@@ -35,6 +35,7 @@
 
         public static function registerUser($name, $username, $password, $repeatedPassword, $email, $phone)
         {
+            session_start();
             if ($name == "" || $username == "" || $password == "" || $repeatedPassword == "" || $email == "" || $phone == "") {
                 header("location:/register.php?error=empty%20fields");
                 return;
@@ -64,7 +65,7 @@
                 $request->bindParam(':phone', $phone);
                 if ($request->execute()) {
                     $_SESSION['registered'] = true;
-                    AccountManager::loginUser($username, $password);
+                    header("location:/index.php");
                 } else {
                     print_r($request->errorInfo());
                     header("location:/register.php?error=sqlerror");

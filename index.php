@@ -42,9 +42,7 @@
                                 consequatur
                                 ipsa ipsam quod ducimus?
                             </p>
-                            <a href="clasament_rss.php">
-                                <img id="rss-img" alt="" src="images/rss_icon.png">
-                            </a>
+                          
                             <button class="main-button">Get Started</button>
                         </div>
                         <div class="highscores-container">
@@ -323,6 +321,7 @@
             include_once 'footer.php';
         ?>
         <?php
+            
             if (isset($_SESSION['logged_in'])) {
                 unset($_SESSION['logged_in']);
                 echo '<div id="login-success"><p>V-ati logat cu succes!</p></div>';

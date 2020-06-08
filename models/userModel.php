@@ -45,6 +45,15 @@
             return $resultArray;
         }
 
+        public static function GetUserById($id) {
+            session_start();
+            $sql = "SELECT * FROM `users` WHERE id = " .$id;
+            $result = DatabaseConnectionManager::get_conn()->query($sql);
+            $resultUsers = $result->fetch();
+            $foundUser = new UserModel($resultUsers["id"], $resultUsers["name"], $resultUsers["username"], $resultUsers["password"], $resultUsers["email"], $resultUsers["phone"],  $resultUsers["imageLink"]);
+            return $foundUser;
+        }
+
         public static function GetLoggedInUser() {
             session_start();
             $sql = "SELECT * FROM `users` WHERE username LIKE '%".$_SESSION['username']."%'";
