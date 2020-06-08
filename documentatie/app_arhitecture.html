@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <title>TraST - Arhitectura aplicatiei</title>
+        <link rel="stylesheet" href="css/scholarly.min.css">
+        <script src="js/scholarly.min.js"></script>
+    </head>
+    <body prefix="schema: http://schema.org">
+        <header>
+            <div class="banner">
+                <img src="trast.svg" width="227" height="50" alt="Scholarly HTML logo">
+                <div class="status">Actualizat la 08 iunie 2020</div>
+            </div>
+            <h1>TraST - Arhitectura aplicatiei</h1>
+        </header>
+        <div role="contentinfo">
+            <dl>
+                <dt>Dezvoltatori</dt>
+                <dd>
+                    Blaga Mihai Andrei
+                    <a href="https://www.facebook.com/mihai.blaga.963">Mihai Blaga</a>
+                </dd>
+                <dd>
+                    Ciubotariu Vlad Calin
+                    <a href="https://www.facebook.com/ciubotariu.vlad99/">Ciubotariu Vlad</a>
+                </dd>
+            </dl>
+        </div>
+        <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+            <h2>Scop</h2>
+            <p>
+                Scopul aplicatiei TraST este de a oferi continut pentru invatarea aspectelor teoretice pentru examenul
+                teoretic din cadrul obtinerii permisului de conducere.
+            </p>
+        </section>
+        <section id="introduction" role="doc-introduction">
+            <h2>Introducere</h2>
+            <p>
+                TraST este un serviciu Web pus la dispozitie pentru orice persoane care doreste sa se pregateasca cat
+                mai bine pentru partea teoretica a examenului auto. Prin informatiile puse la dispozitie de aceasta
+                aplicatie, utilizatorii pot invata cat mai repede si cat mai eficient tot ce au nevoie pentru a trece
+                examenul teoretic pentru obtinerea permisului auto.
+            </p>
+            <p>
+                Aplicatia ofera mai multe serivicii precum:
+            </p>
+            <ul>
+                <li>Crearea unui cont de utilizator pentru retinerea progresului</li>
+                <li>Un mediu de invatare al semnelor de circulatie si a semnificarii acestora</li>
+                <li>Un mediu de invatare al codului penal</li>
+                <li>Un mediu de parcurgere al intrebarilor</li>
+                <li>Rezolvare de chestionare auto, de tipul examenului teoretic</li>
+                <li>Vizualizarea unui clasament al utilizatorilor</li>
+                <li>Vizualizare de statistici si compararea acestora cu celele ale altor utilizatori</li>
+            </ul>
+            <p>
+                Toate aceste servicii au scopul de a ajuta utilizatorul sa invete cat mai rapid si eficient informatiile
+                necesare pentru obtinerea permisului.
+            </p>
+        </section>
+        <section id="pas1">
+            <h2>Crearea contului si logarea in cont</h2>
+            <p>
+                Unul din cele mai importante aspecte ale aplicatiei TraST este crearea unui cont.
+            </p>
+            <p>
+                Un cont de utilizator este necesar pentru o mai buna invatare, intrucat inregistreaza progresul facut
+                de catre acesta. De asemenea, prin crearea unui cont, pot fi vazute statistici ale contului.
+            </p>
+            <section id="register">
+                <h3>Crearea contului de utilizator</h3>
+                <p>
+                    Pentru a ajunge la fereastra de 'Creare cont', utilizatorul trebuie sa apese pe butonul
+                    'Get Started' de pe prima pagina a aplicatiei.
+                </p>
+                <p>
+                    Pentru crearea unui cont, sunt necesare urmatoarele:
+                </p>
+                <ul>
+                    <li>Numele utilizatorului</li>
+                    <li>Un username, de minim 4 caractere si care sa nu fie deja folosit</li>
+                    <li>O adresa de email, valida, care sa nu fie deja folosita</li>
+                    <li>O parola, de minim 6 caractere, cat mai sigura(contra exemplu: '123456')</li>
+                    <li>Numar de telefon</li>
+                </ul>
+                <p>
+                    Este necesara completarea tuturor campurilor pentru a putea creea un cont nou.
+                </p>
+            </section>
+            <section id="login">
+                <h3>Logarea in cont</h3>
+                <p>
+                    Odata ce si-a creeat un cont, utilizatorul se poate loga folosind datele contului creat.
+                </p>
+                <p>
+                    Pentru asta, este nevoie de accesarea paginii de 'Login', prin apasarea butonului din bara de
+                    navigare.
+                </p>
+
+                <p>
+                    Pentru accesarea contului este nevoie de:
+                </p>
+                <ul>
+                    <li>Numele de utilizator</li>
+                    <li>Parola contului</li>
+                </ul>
+                <p>
+                    Imediat ce v-ati logat in cont, puteti folosi fiecare functie a aplicatiei TraST.
+                </p>
+            </section>
+        </section>
+        <section id="pas2">
+            <h2>Profilul utilizatorului</h2>
+            <p>
+                Probabil una dintre cele mai importante pagini, este pagina profilului dumneavoastra. Pe aceasta pagina
+                puteti vedea progresul dumneavosatra din ultimele 2 saptamani, puteti compara acest progres cu cel al
+                altor utilizatori sau puteti sa va schimbati anumite date ale contului, precum:
+            </p>
+            <ul>
+                <li>Fotografia de profil, sau setarea unei fotografii de profil, daca nu a fost setata deja</li>
+                <li>Numele utilizatorului</li>
+                <li>Username-ul</li>
+                <li>Email-ul folosit</li>
+                <li>Parola</li>
+                <li>Numarul de telefon</li>
+            </ul>
+            <p>
+                Prin cautarea unui alt utilizator, accesand bara de cautare, pe baza username-ului acestuia, puteti
+                vedea progresul utilizatorului respectiv si va puteti compara progresul dumneavoastra fata de al
+                celuilalt utilizator
+            </p>
+        </section>
+        <section id="pas3">
+            <h2>Inceperea procesului de invatare</h2>
+            <p>
+                Probabil cel mai important pas din invatarea pentru examenul auto teoretic, este invatarea codului
+                rutier si al semnelor de circulatie cu care fiecare viitor sofer se va intalni zi de zi. TraST pune la
+                dispozitie medii de invatare pentru fiecare in parte pentru a va asigura asimilarea de cunsotiinte.
+            </p>
+            <p>
+                Accesarea mediului de invatare se face din bara de navigatie, apasand butonul 'Mediu de invatare'.
+            </p>
+            <section id="pas3-semne">
+                <h3>Invatarea semnelor de circulatie</h3>
+                <p>
+                    Aplicatia pune la dispozitie atat o lista a semnelor de circulatie, cat si descrierea fiecaruia in
+                    parte, pentru ca utilizatorul sa poata invata cum se procedeaza la intalnirea fiecarui semn in
+                    parte.
+                </p>
+                <p>
+                    Categoriile semnelor de circulatie sunt:
+                </p>
+                <ul>
+                    <li>Indicatoare rutiere de prioritate</li>
+                    <li>Indicatoare de interzicere sau restrictie</li>
+                    <li>Indicatoare rutiere de obligare</li>
+                    <li>Indicatoare rutiere de avertizare</li>
+                    <li>Indicatoare rutiere de informare</li>
+                    <li>Indicatoare rutiere de orientare</li>
+                    <li>Indicatoare semnalizare lucrari pe carosabil</li>
+                </ul>
+            </section>
+            <section id="pas4-legislatie">
+                <h3>Invatarea codului rutier</h3>
+                <p>
+                    Cunoasterea codului rutier este unul dintre cele mai importante aspecte ale obtinerii permisului
+                    auto. FIecare sofer trebuie sa stie atat drepturile sale cat si obligatiile lui fata de ceilalti
+                    participanti la trafic. Cele 10 capitole ale codului rutier, organizat pe articole, iti este pus la
+                    dispozitie pentru o invatare si intelegere cat mai usoara a acestuia.
+                </p>
+                <p>Aceste capitole sunt:</p>
+                <ul>
+                    <li>Dispozitii generale</li>
+                    <li>Vehiculele</li>
+                    <li>Conducatorii de vehicule</li>
+                    <li>Semnalizarea rutiera</li>
+                    <li>Reguli de circulatie</li>
+                    <li>Infractiuni si pedepse</li>
+                    <li>Raspunderea contraventionala</li>
+                    <li>Cai de atac impotriva procesului-verbal de contestare a contraventiei</li>
+                    <li>Atributii ale unor ministere si ale altor autoritati ale administratiei publice</li>
+                    <li>Dispozitii finale</li>
+                </ul>
+            </section>
+        </section>
+        <section id="pas4">
+            <h2>Inceperea parcurgerii intrebarilor pentru aprofundarea cunsostiintelor</h2>
+            <p>
+                Dupa parcurgerea mediului de invatare al semnelor de circulatie si cel al codului rutier, urmatorul pas
+                pentru aprofundarea cunsotiintelor este parcurgearea setului de intrebari puse la dispozitie
+                utilizatorului.
+            </p>
+            <p>
+                Pentru a putea parcurge intrebarile, utilizatorul trebuie sa aiba cont si sa fie logat. Altfel nu poate
+                accesa mediul de invatare.
+            </p>
+            <p>
+                La accesarea mediului de parcurgere a intrebarilor, utilizatorul continua invatarea de la utima
+                intrebare la care a ramas. De asemenea, se ofera informatii legate de numarul total de intrebari,
+                intrebarea curenta si numarul de intrebari ramase.
+            </p>
+            <p>
+                Pentru a raspunde la o intrebare, utilizatorul trebuie sa citeasca mai intai intrebarea si sa aleaga
+                raspunul corect pentru intrebarea respectiva. In cazul in care utilizatorul nu este sigur de raspuns, ii
+                este recomandat sa revina asupra capitolului de invatare, corespunzator domeniului intrebarii, pentru o
+                mai buna aprofundare a cunostiintelor.
+            </p>
+        </section>
+        <section id="pas5">
+            <h2>Inceperea rezolvarii chestionarelor</h2>
+            <p>
+                Odata cu completarea setului de intrebari pentru aprofundarea cunostiintelor, utilizatorului ii este
+                recomandat sa inceapa rezolvarea de chestionare auto, care, spre deosebire de intrebarile de antrenament
+                , au termen limita de rezolvare, cu numar maxim de 5 greseli.
+            </p>
+            <p>
+                Utilizatorul are posibilitatea de a alege gradul de dificultate al intrebarilor ce se vor regasi in
+                chestionar.
+            </p>
+            <p>
+                Gradele de dificultate sunt:
+            </p>
+            <ul>
+                <li>Usor - 1</li>
+                <li>Mediu - 2</li>
+                <li>Greu - 3</li>
+                <li>Extrem - 4</li>
+            </ul>
+            <p>
+                Pentru completarea unui chestionar este nevoie de parcurgerea a 26 de intrebari, din care este nevoie sa
+                se raspunda corect la minim 22 dintre ele. Daca se inregistreaza 5 intrebari gresite, chestionarul este
+                automat esuat, indiferent de numarul de intrebari rezolvate corect.
+            </p>
+        </section>
+        <section id="pas6">
+            <h2>Vizualizarea clasamentului</h2>
+            <p>
+                La sectiunea 'Clasament' se pot vedea 2 tabele, in fiecare dintre ele este prezentat topul
+                utilizatorilor.
+            </p>
+            <section id="clasament-invatare">
+                <h3>Topul chestionarelor rezolvate corect</h3>
+                <p>
+                    In tabelul din partea stanga a paginii este prezentat un tabel al utilizatorilor, sortati in ordine
+                    descrescatoare dupa numarul de chestionare rezolvate corect si in ordine alfabetica, in functie de
+                    username.
+                </p>
+            </section>
+            <section id="clasament-chestionare">
+                <h3>Topul progresului mediului de invatare al intrebarilor</h3>
+                <p>
+                    In tabelul din partea dreapta a paginii este prezentat un tabel al utilizatorilor, sortati in ordine
+                    descrescatoare dupa progresul, adica numarul intrebarii, din mediul de invatare al intrebarilor si
+                    in ordine alfabetica, in functie de username.
+                </p>
+            </section>
+            <section id="clasament-date">
+                <h3>Exportarea datelor</h3>
+                <p>
+                    Utilizatorului ii este pusa la dispozitie exportarea datelor despre ceilalti utilizatori in 2
+                    formate:
+                </p>
+                <ul>
+                    <li>Format XML, pus la dispozitie ca si Feed RSS</li>
+                    <li>Format CSV</li>
+                </ul>
+            </section>
+        </section>
+    </body>
+</html>
