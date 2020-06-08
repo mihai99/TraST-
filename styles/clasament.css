@@ -24,9 +24,11 @@ h1 {
     margin: 4px;
     margin-top: 50px;
 }
+
 tr th:first-of-type {
     width: 15px;
 }
+
 table {
     table-layout: fixed;
     max-height: 400px;
@@ -87,22 +89,31 @@ tr:nth-child(odd) {
     background-color: #b2bec3;
 }
 
+#csv-btn img {
+    width: 50px;
+    height: 50px;
+}
+
 td:nth-child(1) {
     text-align: center;
     width: 50px;
 }
+
 @media screen and (max-width: 1200px) {
     .tables-body {
         justify-content: center;
     }
+
     .left-table, .right-table {
         width: 80%;
     }
 }
+
 @media screen and (max-width: 850px) {
     .tables-body {
         display: 100%;
     }
+
     .left-table, .right-table {
         width: 100%;
     }

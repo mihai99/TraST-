@@ -171,8 +171,13 @@ label.search {
 }
 
 .left-admin-panel label {
-    margin-top: 10px;
+    margin-top: 40px;
     display: block;
+}
+
+.left-admin-panel input {
+    display: block;
+    margin-bottom: 10px;
 }
 
 .left-admin-panel label:nth-child(first) {

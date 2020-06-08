@@ -11,6 +11,10 @@
             include_once 'header.php';
         ?>
         <div class="tables-body body-wrapper">
+            <a href="clasament_csv.php" id="csv-btn" download>
+                <img src="images/csv_icon.png" alt="">
+                <p>Importa datele</p>
+            </a>
             <div class="left-table">
                 <table id="table1">
                     <caption>Topul utilizatorilor in functie de numarul de chestionare rezolvate</caption>
@@ -53,6 +57,6 @@
                 </table>
             </div>
         </div>
-      
+
     </body>
 </html>
