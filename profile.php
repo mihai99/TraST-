@@ -41,7 +41,9 @@
             </div>
         </div>
 
-        <div class="admin-panel">
+        <?php
+            if (isset($_SESSION['admin']) && $_SESSION['admin'] == true) {
+                echo '<div class="admin-panel">
             <div class="left-admin-panel">
                 <div class="delete-user-container">
                     <label for="delete-user-input">Sterge utilizator:</label>
@@ -107,7 +109,9 @@
                     <span id="add-question-response"></span>
                 </div>
             </div>
-        </div>
+        </div>';
+            }
+        ?>
 
         <div class="modals hidden" onclick="closeModals()">
             <form action="php_scripts/ChangeUserDetails.php" method="post" enctype="multipart/form-data"
