@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="styles/general.css">
-    <link rel="stylesheet" type="text/css" href="styles/porfile.css">
+    <link rel="stylesheet" type="text/css" href="styles/profile.css">
 </head>
 
 <body>
@@ -39,6 +39,91 @@
                             <button class="main-button" onclick="showChangeDetailsModal()">Change details</button>
                             <button class="main-button" onclick="showChangePasswordModal()">Change password</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admin-panel" id="admin-panel">
+                <div class="left-admin-panel">
+                    <div class="delete-user-container admin-input">
+                        <div class="top">
+                            <div class="right">
+                                <label for="delete-user-input">Sterge utilizator:</label>
+                                <input type="text" name="delete-user-input" id="delete-user-input">
+                            </div>
+                            <button class="main-button" onclick="deleteUser()">Sterge!</button>
+                        </div>
+                        <span id="delete-user-response"></span>
+                    </div>
+                    <div class="create-admin-container admin-input">
+                        <div class="top">
+                            <div class="right">
+                                <label for="create-admin-input">Creeaza admin:</label>
+                                <input type="text" name="create-admin-input" id="create-admin-input">
+                            </div>
+                            <button class="main-button" onclick="createAdmin()">Creeaza</button>
+                        </div>
+
+                        <span id="create-admin-response"></span>
+                    </div>
+                    <div class="delete-admin-container  admin-input">
+                        <div class="top">
+                            <div class="right">
+                                <label for="delete-admin-input">Elimina drepturi de admin:</label>
+                                <input type="text" name="delete-admin-input" id="delete-admin-input">
+                            </div>
+                            <button class="main-button" onclick="deleteAdmin()">Elimina</button>
+                        </div>
+
+                        <span id="delete-admin-response"></span>
+                    </div>
+                </div>
+                <div class="right-admin-panel">
+                    <div class="add-question-container">
+                        <h3>Adauga o noua intrebare</h3>
+                        <label for="question-text-input">
+                            Intrebarea:
+                        </label>
+                        <textarea id="question-text-input"></textarea>
+                        <div class="input">
+                            <label for="question-answer1">Prima varianta de raspuns:</label>
+                            <input type="text" name="question-answer1" id="question-answer1">
+                        </div>
+                        <div class="input">
+                            <label for="question-answer2">A doua varianta de raspuns:</label>
+                            <input type="text" name="question-answer2" id="question-answer2">
+                        </div>
+                        <div class="input">
+                            <label for="question-answer3">A treia varianta de raspuns:</label>
+                            <input type="text" name="question-answer3" id="question-answer3">
+                        </div>
+
+                        <div class="answer-options">
+                            <p>Raspuns corect: </p>
+                            <label for="option-A">A</label>
+                            <input type="radio" name="answer-option" id="option-A" checked="true">
+
+                            <label for="option-B">B</label>
+                            <input type="radio" name="answer-option" id="option-B">
+
+                            <label for="option-C">C</label>
+                            <input type="radio" name="answer-option" id="option-C">
+                        </div>
+
+                        <div class="difficulty-option">
+                            <p>Dificultate:</p>
+
+                            <label for="dif1">1</label>
+                            <input type="radio" name="difficulty-option" id="dif1" checked="true">
+
+                            <label for="dif2">2</label>
+                            <input type="radio" name="difficulty-option" id="dif2">
+
+                            <label for="dif3">3</label>
+                            <input type="radio" name="difficulty-option" id="dif3">
+                        </div>
+                        <button class="main-button" onclick="addQuestion()">Adauga intrebarea</button>
+                        <span id="add-question-response"></span>
                     </div>
                 </div>
             </div>
@@ -85,7 +170,7 @@
                     <p>Linia rosie: teste esuate</p>
                 </div>
                 <div id="learning-graph" class="tests-graph graph">
-                    <canvas id="compare-invatare-graph-canvas" style="border:1px solid #d3d3d3;">  Browserul nu suporta canvasuri</canvas>
+                    <canvas id="compare-invatare-graph-canvas" style="border:1px solid #d3d3d3;"> Browserul nu suporta canvasuri</canvas>
                     <p>Progresul mediului de invatare</p>
                     <p>Verticala: numarul de intrebari parcurse</p>
                     <p>Orizontala: ultimele 14 zile</p>
@@ -126,15 +211,15 @@
         <form action="php_scripts/ChangePassword.php" method="post" enctype="multipart/form-data" target="password-response-frame" class="modal change-password-modal" onclick="shopClickPropagation(event, this)">
             <div class="detail">
                 <p>Current password:</p>
-                <input type="text" id="current-password" name="current-password">
+                <input type="password" id="current-password" name="current-password">
             </div>
             <div class="detail">
                 <p>New password:</p>
-                <input type="text" id="new-password" name="new-password">
+                <input type="password" id="new-password" name="new-password">
             </div>
             <div class="detail">
                 <p>Repeat new password:</p>
-                <input type="text" id="repeat-password" name="repeat-password">
+                <input type="password" id="repeat-password" name="repeat-password">
             </div>
             <p id="change-password-response-p"></p>
             <div class="buttons">
@@ -149,6 +234,7 @@
     <script src="javascript/profile-graphs-handler.js"></script>
     <script src="javascript/ajax/graph-handler.js"></script>
     <script src="javascript/compare-handler.js"></script>
+    <script src="javascript/admin_account/admin_account_handler.js"></script>
     <script>
         getTestsProgress();
         getLearningProgress();
@@ -162,6 +248,14 @@
             };
         };
     </script>
+    <?php
+    if (!(isset($_SESSION['admin']) && $_SESSION['admin'] == true)) {
+        echo "<script>
+                document.getElementById('admin-panel').innerHTML = null;
+                document.getElementById('admin-panel').style.display = 'none';
+            </script>";
+    }
+    ?>
 </body>
 
 </html>

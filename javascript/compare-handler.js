@@ -6,6 +6,8 @@ function compareUsers(userId) {
     document.getElementById("searchedUsers").classList.remove("show-item");
     document.getElementById("hide-comparing").classList.add("show-item");
     document.getElementById("hide-comparing").classList.remove("hide-item");
+    document.getElementById("admin-panel").classList.add("hide-admin");
+    document.getElementById("admin-panel").classList.remove("show-admin");
     getComparingnUser(userId);
     getComparingLearningProgress(userId);
     getComparingTestsProgress(userId);
@@ -19,4 +21,6 @@ function hideComparing() {
     document.getElementById("searchedUsers").classList.remove("show-item");  
     document.getElementById("hide-comparing").classList.remove("show-item");
     document.getElementById("hide-comparing").classList.add("hide-item");
+    document.getElementById("admin-panel").classList.remove("hide-admin");
+    document.getElementById("admin-panel").classList.add("show-admin");
 }

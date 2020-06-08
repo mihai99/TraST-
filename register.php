@@ -55,8 +55,5 @@
                 <a href="login.php">Ai deja cont? Click aici pentru a te conecta!</a>
             </form>
         </div>
-        <?php
-            include_once 'footer.php';
-        ?>
     </body>
 </html>

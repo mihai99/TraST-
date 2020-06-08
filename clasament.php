@@ -10,13 +10,22 @@
         <?php
             include_once 'header.php';
         ?>
-         <div class="rss-container">
-             <p>Descarca fisierul RSS</p>
-             <a href="clasament_rss.php">
-                 <img id="rss-img" alt="" src="images/rss_icon.png">
-             </a>
+         <div class="downloadable">
+             <div class="option">
+                 <a href="clasament_rss.php">
+                    <p>Descarca fisierul RSS</p>
+                     <img id="rss-img" alt="" src="images/rss_icon.png">
+                 </a>
+                </div>
+                 <div class="option">
+                 <a href="clasament_csv.php" id="csv-btn" download>
+                     <p>Importa datele</p>
+                    <img src="images/csv_icon.png" alt="">
+                </a>
+             </div>
          </div>
         <div class="tables-body body-wrapper">
+           
             <div class="left-table">
                 <table id="table1">
                     <caption>Topul utilizatorilor in functie de numarul de chestionare rezolvate</caption>
@@ -59,6 +68,6 @@
                 </table>
             </div>
         </div>
-      
+
     </body>
 </html>

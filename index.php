@@ -43,7 +43,7 @@
                                 ipsa ipsam quod ducimus?
                             </p>
                           
-                            <button class="main-button">Get Started</button>
+                            <button class="main-button" onclick="location.href='register.php'">Get Started</button>
                         </div>
                         <div class="highscores-container">
                             <div class="highscores">
@@ -54,57 +54,9 @@
                                         <th>Name</th>
                                         <th>Score</th>
                                     </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Maria Anders</td>
-                                        <td>567</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Francisco Chang</td>
-                                        <td>456</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Roland Mendel</td>
-                                        <td>345</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Helen Bennett</td>
-                                        <td>234K</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Yoshi Tannamuri</td>
-                                        <td>123</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Maria Anders</td>
-                                        <td>567</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>Francisco Chang</td>
-                                        <td>456</td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Roland Mendel</td>
-                                        <td>345</td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td>Helen Bennett</td>
-                                        <td>234K</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td>Yoshi Tannamuri</td>
-                                        <td>123</td>
-                                    </tr>
+                                    <?php
+                                        include_once 'php_scripts/printTopRank.php';
+                                    ?>
                                 </table>
                             </div>
                         </div>
@@ -113,16 +65,16 @@
                         <img src="/images/gallery/image1.jpg" id="gallery-image-1" class="gallery-image show" alt="">
                         <!---
                           TODO: gallery
-                           <img src="../images/gallery/image2.jpg" id = "gallery-image-2" class = "gallery-image hide" alt="">
-                          <img src="../images/gallery/image3.jpg" id = "gallery-image-3" class = "gallery-image hide" alt="">
-                          <img src="../images/gallery/image4.jpg" id = "gallery-image-4" class = "gallery-image hide" alt="">
+                           <img alt="" src="../images/gallery/image2.jpg" id = "gallery-image-2" class = "gallery-image hide" alt="">
+                          <img alt="" src="../images/gallery/image3.jpg" id = "gallery-image-3" class = "gallery-image hide" alt="">
+                          <img alt="" src="../images/gallery/image4.jpg" id = "gallery-image-4" class = "gallery-image hide" alt="">
                         -->
                     </div>
                 </div>
                 <div class="row articles">
                     <h3>Useful links:</h3>
                     <article>
-                        <img src="/images/articles/article1.jpg">
+                        <img alt="" src="/images/articles/article1.jpg">
                         <div class="title">Anvelopele de vară. Recomandări pentru folosirea de pneuri aferente fiecărui
                             sezon
                         </div>
@@ -143,7 +95,7 @@
                            target="_blank">Check it out</a>
                     </article>
                     <article>
-                        <img src="/images/articles/article2.jpg">
+                        <img alt="" src="/images/articles/article2.jpg">
                         <div class="title">De ce să folosești antigelul și vara?</div>
                         <div class="date">30 martie 2019</div>
                         <p>
@@ -165,7 +117,7 @@
                            target="_blank">Check it out</a>
                     </article>
                     <article>
-                        <img src="/images/articles/article3.jpg">
+                        <img alt="" src="/images/articles/article3.jpg">
                         <div class="title">ÎN TRAFIC. Cum evităm unghiurile moarte ale camioanelor</div>
                         <div class="date">22 martie 2020</div>
                         <p>
@@ -185,7 +137,7 @@
                            target="_blank">Check it out</a>
                     </article>
                     <article>
-                        <img src="/images/articles/article4.jpg">
+                        <img alt="" src="/images/articles/article4.jpg">
                         <div class="title">Verifică-ți mașina! Dacă nu ai aceste obiecte în portbagaj, poți fi amendat
                         </div>
                         <div class="date">25 februarie 2019</div>
@@ -211,7 +163,7 @@
                            target="_blank">Check it out</a>
                     </article>
                     <article>
-                        <img src="/images/articles/articel5.jpg">
+                        <img alt="" src="/images/articles/articel5.jpg">
                         <div class="title">Cum pregătim mașina pentru primăvară. Verificați uleiul, frânele sau
                             direcția
                         </div>
@@ -238,7 +190,7 @@
                            target="_blank">Check it out</a>
                     </article>
                     <article>
-                        <img src="/images/articles/article6.jpg">
+                        <img alt="" src="/images/articles/article6.jpg">
                         <div class="title">Cum să conduci pe geruri năprasnice. Câteva sfaturi practice</div>
                         <div class="date">15 martie 2019</div>
                         <p>
@@ -265,7 +217,7 @@
                            target="_blank">Check it out</a>
                     </article>
                     <article class="hide-md">
-                        <img src="/images/articles/article7.jpg">
+                        <img alt="" src="/images/articles/article7.jpg">
                         <div class="title">S-a aprins becul la benzină! Câți kilometri mai poți merge „pe roșu”?</div>
                         <div class="date">30 martie 2019</div>
                         <p>
@@ -290,7 +242,7 @@
                            target="_blank">Check it out</a>
                     </article>
                     <article class="hide-md">
-                        <img src="/images/articles/article8.jpg">
+                        <img alt="" src="/images/articles/article8.jpg">
                         <div class="title">Cum să dezgheți eficient parbrizul?</div>
                         <div class="date">12 martie 2019</div>
                         <p>

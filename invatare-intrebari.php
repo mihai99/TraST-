@@ -69,9 +69,7 @@
                     <span id="answer-message-wrong">Gresit! Mai incearca.</span>
                     <div class="buttons">
                         <button id="button-delete" class="secondary-button" onclick="resetAnswer()">Sterge raspunsul</button>
-                        <button id="button-send" class="secondary-button" onclick="checkAnswer()">
-                            Trimite raspunsul
-                        </button>
+                        <button id="button-send" class="secondary-button" onclick="checkAnswer()">Trimite raspunsul </button>
                   
                     </div>
                     

@@ -44,7 +44,6 @@ function checkAnswer() {
             default:
                 break;
         }
-        console.log(choice);
         let xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {

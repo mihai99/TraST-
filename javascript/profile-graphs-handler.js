@@ -39,7 +39,7 @@ function fillTestProgressGraph(dailyActivity, canvasName) {
             ctx.lineTo(20 + i * (width - 40) / horizontalPoints, height - 30);
             let date = new Date();
             date.setDate(date.getDate() - (10 - i));
-            let dateString = date.getDate() + "/" + date.getMonth();
+            let dateString = date.getDate() + "/" + (date.getMonth()+1);
             ctx.fillText(dateString, 15 + i * (width - 40) / horizontalPoints, height);
         }
 
@@ -124,7 +124,7 @@ function fillLearningGraph(dailyActivity, canvasName) {
             ctx.lineTo(20 + i * (width - 40) / horizontalPoints, height - 30);
             let date = new Date();
             date.setDate(date.getDate() - (10 - i));
-            let dateString = date.getDate() + "/" + date.getMonth();
+            let dateString = date.getDate() + "/" + (date.getMonth()+1);
             ctx.fillText(dateString, 15 + i * (width - 40) / horizontalPoints, height);
         }
 

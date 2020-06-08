@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 07, 2020 at 06:47 PM
+-- Generation Time: Jun 08, 2020 at 09:24 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.28
 
@@ -21,6 +21,42 @@ SET time_zone = "+00:00";
 --
 -- Database: `trast`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admins`
+--
+
+CREATE TABLE `admins` (
+  `user_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `learning_progress`
+--
+
+CREATE TABLE `learning_progress` (
+  `userId` int(11) NOT NULL,
+  `date` date NOT NULL,
+  `questions` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `learning_progress`
+--
+
+INSERT INTO `learning_progress` (`userId`, `date`, `questions`) VALUES
+(48, '2020-06-01', 5),
+(48, '2020-06-05', 6),
+(48, '2020-06-07', 9),
+(48, '2020-06-08', 5),
+(49, '2020-06-03', 6),
+(49, '2020-06-05', 3),
+(49, '2020-06-07', 9),
+(49, '2020-06-08', 5);
 
 -- --------------------------------------------------------
 
@@ -110,6 +146,41 @@ INSERT INTO `questions` (`id`, `text`, `answer1`, `answer2`, `answer3`, `answer`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tests_progress`
+--
+
+CREATE TABLE `tests_progress` (
+  `userId` int(11) DEFAULT NULL,
+  `date` date NOT NULL,
+  `failed` int(11) NOT NULL,
+  `passed` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tests_progress`
+--
+
+INSERT INTO `tests_progress` (`userId`, `date`, `failed`, `passed`) VALUES
+(47, '2020-05-27', 3, 5),
+(47, '2020-06-02', 8, 9),
+(47, '2020-06-04', 4, 8),
+(47, '2020-06-07', 3, 4),
+(47, '2020-05-31', 5, 6),
+(47, '2020-06-08', 3, 7),
+(48, '2020-06-01', 7, 6),
+(48, '2020-05-29', 5, 8),
+(48, '2020-06-01', 4, 8),
+(48, '2020-06-04', 3, 9),
+(48, '2020-06-06', 3, 6),
+(48, '2020-06-08', 5, 9),
+(49, '2020-06-02', 5, 6),
+(49, '2020-06-04', 8, 9),
+(49, '2020-06-06', 3, 5),
+(49, '2020-06-08', 5, 6);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -129,26 +200,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `username`, `password`, `email`, `phone`, `imageLink`, `register_date`) VALUES
-(20, 'Andrei Mihai Blaga', 'aaa', '$2y$10$Lfsxka6JQwgzSch/jAEoPORNIAE7Zr90l6X3ISFOP165v9Rd/zffS', 'mihaiandrei_99@yahoo.com', '0733153579', '', '2020-06-07'),
-(21, 'Andrei Mihai Blaga', 'pula', '$2y$10$j5tVScUs/fV7wuDNDsXxG.u.u/ME1DcUGCH0PXgWnB0xhUqknE7mC', 'mihaiandrei_99@yahoo.comdasda', '0733153575', 'http://localhost/images/profiles/sZSSjgqDfc.jpg', '2020-06-07'),
-(22, 'BLAGA MIHAI', 'pula2', '$2y$10$GmMa9S2TRGVvzXWOcotUrexVxIUGsONcA/Ii3PUDe83ZOr37d6n.S', 'mihaiandrei_99@yahoo.comdsa', '0733153579', 'http://localhost/images/profiles/default.png', '2020-06-07'),
-(23, 'dasdasds', 'ddd', '$2y$10$fck/eWuo.QmoLbREA9H/w.RbSstI6MWuzpqKOkzD4PjlLGIh932eq', 'dasd@dasd.dasd', '0733153572', 'http://localhost/images/profiles/YiSbxlp4ye.jpg', '2020-06-07'),
-(24, 'Ciubotariu Vlad ', 'ciubix', '$2y$10$XgqCc1nSHwWbISHqODlvues8KYtk/FEoMzNmeXcv1Kum8h1W5ySku', 'ciubotariuvlad99@yahoo.com', '0743650048', '', '2020-06-07'),
-(25, 'Ciubotariu Vlad', 'ciubix1', '$2y$10$M90r76O2my4VG0xeamcN3.UNocenVoaGZBLf7a62Eii77aeem3asC', 'ciubotariuvlad98@yahoo.com', '0743650048', '', '2020-06-07'),
-(26, 'ciubi', 'ciubix2', '$2y$10$W6YLANtGLO.Ad2FQnXY18..EKNuvjGXx6GafHlkj66ZtqHoW440JS', 'ciubotariuvlad99@gmail.com', '0743650048', '', '2020-06-07'),
-(27, 'Ciubotariu', 'ciubix3', '$2y$10$jpZp9o0JnU/391gvJ372pucxFIq0yeDQhhiShI3Ylk98obcsbnvgW', 'ciub@gmail.com', '0743650048', '', '2020-06-07'),
-(28, 'vlad', 'ciubix4', '$2y$10$aWliiCI1XGnYxW0b.Qhi3uLp.WrjaoPuNptYfSX4o/Dji5lLX0TF.', 'ciub@yahoo.com', '0743650048', '', '2020-06-07'),
-(29, 'vlad', 'ciubix5', '$2y$10$.jBGoPwH8Ns21ZwkyrNIouN.iVLMBCrNdDpurgS17ChwUL1D2TZpm', 'ciubix@gmail.com', '0743650048', '', '2020-06-07'),
-(30, 'v', 'v', '$2y$10$zIw4gIwITVyfMxN5nhobVOnPIgRHt5S47aYjRBp4VUmN/f4FASRoO', 'v@gamil.com', '0743650048', '', '2020-06-07'),
-(31, 'BLAGA MIHAI', 'aa', '4124bc0a9335c27f086f', 'mihaiandrei_99@yahoo.com', '0733153579', '', '2020-06-07'),
-(32, 'BLAGA MIHAI', 'aaaa', '4124bc0a9335c27f086f', 'mihaiandrei_99@yahoo.comcc', '0733153579', '', '2020-06-07'),
-(33, 'BLAGA MIHAI', 'aagvfc', '4124bc0a9335c27f086f', 'mihaiandrei_99@yahoo.comc', '0733153579', '', '2020-06-07'),
-(34, 'BLAGA MIHAI', 'aagvfcdsa', '4124bc0a9335c27f086f', 'mihaiandrei_99@yahoo.comcdasd', '0733153579', '', '2020-06-07'),
-(35, 'BLAGA MIHAI', 'aaa', '47bce5c74f589f4867db', 'mihaiandrei_99@yahoo.comdsa', '0733153579', '', '2020-06-07'),
-(36, 'tt', 'tt', 'accc9105df5383111407', 'mihaiandrei_99@yahoo.comfsf', '0733153579', '', '2020-06-07'),
-(37, 'qq', 'qq', '$2y$10$Id5m7UlwUQXho', 'mihaiandrei_99@yahoo.comdsad', '0733153579', '', '2020-06-07'),
-(38, 'ee', 'ee', '$2y$10$yVC0bv/UYHfJ.F/E.AoEiOefU45IKtzYt9tdxUhRb2UExxSRSzuKG', 'mihaiandrei_99@yahoo.comsad', '0733153579', '', '2020-06-07'),
-(39, 'Vlad Ciubotariu', 'ciubix23525', '$2y$10$oHIsKnfiEHsLlANSE1rgK.SSPPj61pakBTd4pMfqTuR5Eu/sHrMm2', 'ciubotariuvlad9859@gmail.com', '0743650048', '', '2020-06-07');
+(47, 'Andrei Mihai Blaga', 'mihai9913', '$2y$10$.bAjZTOsZh82zJuJx8tDcuqR5fvIX1whJEXoFfbCjVcWIsE.TUGKm', 'mihaiandrei_99@yahoo.com', '0733153579', 'http://localhost/images/profiles/X4WXUJh8Da.jpg', '2020-06-08'),
+(48, 'Vlad Ciubotariu', 'ciubix', '$2y$10$umNeIYu6z.pbKAupznYeYOEMXRu8AJulbj1gGizMd/KW9Ik3kpY1C', 'vladciubotariu99@yahoo.com', '0733153570', 'http://localhost/images/profiles/Jj23qxUVIO.jpg', '2020-06-08'),
+(49, 'Test Test', 'test', '$2y$10$GA2VElD.iln6/39.JqQS7ePpikfwf3b4dTOrcgDwCuDseu/6gATsG', 'test@test.test', '0733153234', 'http://localhost/images/profiles/default.png', '2020-06-08'),
+(50, 'Cont de test 2', 'test2', '$2y$10$4ODRZ79h/lEfyvb4xYcLCOjtL3rO.BPwMiGoMa6rAGkIzaLRMbaGC', 'test@tt.t', '0733153575', 'http://localhost/images/profiles/default.png', '2020-06-08');
 
 --
 -- Triggers `users`
@@ -176,30 +231,20 @@ CREATE TABLE `user_progress` (
 --
 
 INSERT INTO `user_progress` (`user_id`, `intrebari_invatare`, `chestionare_t`, `chestionare_c`) VALUES
-(20, 0, 0, 0),
-(21, 0, 0, 0),
-(22, 0, 0, 0),
-(23, 8, 0, 0),
-(24, 0, 0, 0),
-(25, 0, 0, 0),
-(26, 0, 0, 0),
-(27, 0, 0, 0),
-(28, 0, 0, 0),
-(29, 0, 0, 0),
-(30, 0, 0, 0),
-(31, 0, 0, 0),
-(32, 0, 0, 0),
-(33, 0, 0, 0),
-(34, 0, 0, 0),
-(35, 0, 0, 0),
-(36, 0, 0, 0),
-(37, 0, 0, 0),
-(38, 0, 0, 0),
-(39, 0, 0, 0);
+(47, 0, 0, 0),
+(48, 4, 0, 0),
+(49, 0, 0, 0),
+(50, 0, 0, 0);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admins`
+--
+ALTER TABLE `admins`
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- Indexes for table `questions`
@@ -233,13 +278,13 @@ ALTER TABLE `questions`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `user_progress`
 --
 ALTER TABLE `user_progress`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
