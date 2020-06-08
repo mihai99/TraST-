@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
     <head>
+        <title>TraST</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles/invatare/invatare.css">
@@ -167,16 +168,12 @@
                         </li>
                         <li>
                             <a href="pages/invatare-legislatie/cap8.php">VIII.Cai de atac impotriva procesului-verbal de
-                                contestare
-                                a
-                                contraventiei</a>
+                                contestare a contraventiei
+                            </a>
                         </li>
                         <li>
                             <a href="pages/invatare-legislatie/cap9.php">IX.Atributii ale unor ministere si ale altor
-                                autoritati
-                                ale
-                                administratiei
-                                publice</a>
+                                autoritati ale administratiei publice</a>
                         </li>
                         <li>
                             <a href="pages/invatare-legislatie/cap10.php">X.Dispozitii finale</a>
