@@ -46,6 +46,14 @@
         public static function registerUser($name, $username, $password, $repeatedPassword, $email, $phone)
         {
             session_start();
+            if(strlen($username) < 3) {
+                header("location:/register.php?error=username%20too%20short");
+                return;
+            }
+            if(strlen($password) < 3) {
+                header("location:/register.php?error=password%20too%20short");
+                return;
+            }
             if ($name == "" || $username == "" || $password == "" || $repeatedPassword == "" || $email == "" || $phone == "") {
                 header("location:/register.php?error=empty%20fields");
                 return;

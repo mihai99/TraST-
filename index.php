@@ -25,21 +25,7 @@
                     <div class="about">
                         <div class="description">
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At mollitia harum quaerat quae
-                                repellendus
-                                ratione distinctio aut ea aliquam asperiores nisi provident blanditiis cupiditate illo
-                                vitae,
-                                architecto tempore expedita laborum?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate natus, minus
-                                at ex,
-                                adipisci laborum sed, atque perferendis aut quam. Odio, omnis. Aliquid beatae doloribus,
-                                excepturi
-                                hic magnam dolorum.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, a voluptates sit
-                                nobis,
-                                mollitia commodi et iste fugiat quisquam repellat, illum incidunt natus dolorum quos
-                                consequatur
-                                ipsa ipsam quod ducimus?
+                            TraST este o aplicatie Web, care are scopul de a veni in ajutorul celor care doresc sa obtina permisul auto. Aceasta pune la dispozitie o serie de mijloace prin care utilizatorii sa poata invata cat mai rapid si cat mai eficient codul rutier si sa se poata obisnui cu modul de desfasurare al examenului teoretic.
                             </p>
                           
                             <button class="main-button" onclick="location.href='register.php'">Get Started</button>
