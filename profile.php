@@ -48,19 +48,19 @@
                 <div class="delete-user-container">
                     <label for="delete-user-input">Sterge utilizator:</label>
                     <input type="text" name="delete-user-input" id="delete-user-input">
-                    <button class="delete-userBtn" onclick="deleteUser()">Sterge!</button>
+                    <button class="main-button" onclick="deleteUser()">Sterge!</button>
                     <span id="delete-user-response"></span>
                 </div>
                 <div class="create-admin-container">
                     <label for="create-admin-input">Creeaza admin:</label>
                     <input type="text" name="create-admin-input" id="create-admin-input">
-                    <button class="create-admin-Btn" onclick="createAdmin()">Creeaza</button>
+                    <button class="main-button" onclick="createAdmin()">Creeaza</button>
                     <span id="create-admin-response"></span>
                 </div>
                 <div class="delete-admin-container">
                     <label for="delete-admin-input">Elimina drepturi de admin:</label>
                     <input type="text" name="delete-admin-input" id="delete-admin-input">
-                    <button class="delete-admin-Btn" onclick="deleteAdmin()">Elimina</button>
+                    <button class="main-button" onclick="deleteAdmin()">Elimina</button>
                     <span id="delete-admin-response"></span>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                         <label for="dif3">3</label>
                         <input type="radio" name="difficulty-option" id="dif3">
                     </div>
-                    <button class="add-questionBtn" onclick="addQuestion()">Adauga intrebarea</button>
+                    <button class="main-button" onclick="addQuestion()">Adauga intrebarea</button>
                     <span id="add-question-response"></span>
                 </div>
             </div>

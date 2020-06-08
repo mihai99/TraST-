@@ -42,6 +42,9 @@
                                 consequatur
                                 ipsa ipsam quod ducimus?
                             </p>
+                            <a href="clasament_rss.php">
+                                <img alt="" src="images/rss_icon.png">
+                            </a>
                             <button class="main-button" onclick="location.href='register.php'">Get Started</button>
                         </div>
                         <div class="highscores-container">
@@ -53,57 +56,9 @@
                                         <th>Name</th>
                                         <th>Score</th>
                                     </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Maria Anders</td>
-                                        <td>567</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Francisco Chang</td>
-                                        <td>456</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Roland Mendel</td>
-                                        <td>345</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Helen Bennett</td>
-                                        <td>234K</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Yoshi Tannamuri</td>
-                                        <td>123</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Maria Anders</td>
-                                        <td>567</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>Francisco Chang</td>
-                                        <td>456</td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Roland Mendel</td>
-                                        <td>345</td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td>Helen Bennett</td>
-                                        <td>234K</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td>Yoshi Tannamuri</td>
-                                        <td>123</td>
-                                    </tr>
+                                    <?php
+                                        include_once 'php_scripts/printTopRank.php';
+                                    ?>
                                 </table>
                             </div>
                         </div>
