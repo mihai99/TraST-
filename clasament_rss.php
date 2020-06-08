@@ -19,9 +19,9 @@
         echo "<item>";
         $title = $item['username'];
         $link = 'localhost/profile.php?' . $item['username'];
-        $description = 'Chestionare rezolvate in total: ' . $item['chestionare_t'];
-        $description .= 'Chestionare rezolvate corect: ' . $item['chestionare_c'];
-        $description .= 'Intrebari parcurse: ' . $item['intrebari_invatare'];
+        $description = 'Chestionare rezolvate in total: ' . $item['chestionare_t'] . PHP_EOL;
+        $description .= 'Chestionare rezolvate corect: ' . $item['chestionare_c'] . PHP_EOL;
+        $description .= 'Intrebari parcurse: ' . $item['intrebari_invatare'] . PHP_EOL;
 
         echo '<title>' . $title . '</title>' . PHP_EOL;
         echo '<link>' . $link . '</link>' . PHP_EOL;
