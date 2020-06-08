@@ -20,20 +20,22 @@ function beginTest() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
-            console.log(JSON.parse(this.responseText));
-                let response = JSON.parse(this.responseText);
-
-                document.getElementById("answer1text").innerHTML = response["answer1"];
-                document.getElementById("answer2text").innerHTML = response["answer2"];
-                document.getElementById("answer3text").innerHTML = response["answer3"];
-                document.getElementById("question-body").innerHTML = response["text"];
-                let imagePath = response["imagePath"];
-                if(imagePath == "") {
-                    document.getElementById("questionImage").style.display = "none";
-                } else {
-                    document.getElementById("questionImage").style.display = "block";
-                    console.log("images/tests-questions/" + imagePath);
-                    document.getElementById("questionImage").src = "images/tests-questions/" + imagePath;
+                console.log(JSON.parse(this.responseText));
+                if(this.responseText) {
+                    let response = JSON.parse(this.responseText);
+    
+                    document.getElementById("answer1text").innerHTML = response["answer1"];
+                    document.getElementById("answer2text").innerHTML = response["answer2"];
+                    document.getElementById("answer3text").innerHTML = response["answer3"];
+                    document.getElementById("question-body").innerHTML = response["text"];
+                    let imagePath = response["imagePath"];
+                    if(imagePath == "") {
+                        document.getElementById("questionImage").style.display = "none";
+                    } else {
+                        document.getElementById("questionImage").style.display = "block";
+                        console.log("images/tests-questions/" + imagePath);
+                        document.getElementById("questionImage").src = "images/tests-questions/" + imagePath;
+                    }
                 }
         }
     };
@@ -48,8 +50,10 @@ function sendResponse() {
     if(document.getElementsByClassName("selected-answer")[0]) {
         let answer = "";
         let selectedElements = document.getElementsByClassName("selected-answer");
+        console.log(selectedElements);
+        
         for(let i=0;i<selectedElements.length;i++) {
-            answer += selectedElements[0].firstElementChild.innerHTML;
+            answer += selectedElements[i].firstElementChild.innerHTML;
         }
 
         if(answer) {
@@ -126,6 +130,6 @@ function checkIfTestFailed(failedResponses) {
 
 function checkIfTestPassed(responseNumber, correctNumber) {
     if(responseNumber == 26 && correctNumber >= 22) {
-        location.href = "test-passwd.php";
+        location.href = "test-passed.php";
     }
 }

@@ -21,7 +21,6 @@
         ?>
 
         <div id="content">
-            <body id="page">
                 <div class="row first">
                     <div class="about">
                         <div class="description">

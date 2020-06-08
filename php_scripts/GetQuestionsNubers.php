@@ -1,8 +1,13 @@
 <?php
     session_start();
+    $postponed = count($_SESSION["postponedQuestions"]);
+    $currentQuestion = count ($_SESSION["showedQuestions"]);
+ //   echo $currentQuestion;
+ //   echo $postponed;
+   // echo $postponed;
     $response = array(
-        $_SESSION["currentQuestion"] + count($_SESSION["postponedQuestions"]),
+        $currentQuestion,
         $_SESSION["correctQuestions"],
-        $_SESSION["currentQuestion"]-$_SESSION["correctQuestions"]-count($_SESSION["postponedQuestions"]));
+        $_SESSION["failedQuestions"]);
     echo json_encode($response);
 ?>

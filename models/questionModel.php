@@ -62,6 +62,7 @@
             if ($this->answer == $answerInput) {
                 return true;
             } else {
+                $_SESSION["failedQuestions"]++;
                 return false;
             }
         }

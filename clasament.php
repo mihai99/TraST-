@@ -19,7 +19,7 @@
                 </div>
                  <div class="option">
                  <a href="clasament_csv.php" id="csv-btn" download>
-                     <p>Importa datele</p>
+                     <p>Exporta datele</p>
                     <img src="images/csv_icon.png" alt="">
                 </a>
              </div>
