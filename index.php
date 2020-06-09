@@ -21,9 +21,43 @@
         ?>
 
         <div id="content">
-            <div class="row first">
-                <div class="about">
-                    <div class="description">
+                <div class="row first">
+                    <div class="about">
+                        <div class="description">
+                            <p>
+                            TraST este o aplicatie Web, care are scopul de a veni in ajutorul celor care doresc sa obtina permisul auto. Aceasta pune la dispozitie o serie de mijloace prin care utilizatorii sa poata invata cat mai rapid si cat mai eficient codul rutier si sa se poata obisnui cu modul de desfasurare al examenului teoretic.
+                            </p>
+
+                            <button class="main-button" onclick="location.href='register.php'">Get Started</button>
+                        </div>
+                        <div class="highscores-container">
+                            <div class="highscores">
+                                <p>Highscores</p>
+                                <table>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Name</th>
+                                        <th>Score</th>
+                                    </tr>
+                                    <?php
+                                        include_once 'php_scripts/printTopRank.php';
+                                    ?>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <img src="/images/gallery/image1.jpg" id="gallery-image-1" class="gallery-image show" alt="">
+                    </div>
+                </div>
+                <div class="row articles">
+                    <h3>Useful links:</h3>
+                    <article>
+                        <img alt="" src="/images/articles/article1.jpg">
+                        <div class="title">Anvelopele de vară. Recomandări pentru folosirea de pneuri aferente fiecărui
+                            sezon
+                        </div>
+                        <div class="date">25 martie 2019</div>
                         <p>
                             TraST este un serviciu Web pus la dispozitie pentru orice persoane care doreste sa se
                             pregateasca cat mai bine pentru partea teoretica a examenului auto.</p>

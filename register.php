@@ -14,7 +14,11 @@
             <?php
                 if (isset($_GET['error'])) {
                     $error = $_GET['error'];
-                    if ($error == "empty fields") {
+                    if ($error == "username too short") {
+                        echo '<p>Username-ul este prea scurt!</p>';
+                    } else if ($error == "password too short") {
+                        echo '<p>Parola este prea scurt!</p>';
+                    } elseif ($error == "empty fields") {
                         echo '<p>Toate campurile trebuie completate!</p>';
                     } else if ($error == "username taken") {
                         echo '<p>Username-ul ales este deja folosit. Va rugam alegeti altul.</p>';
