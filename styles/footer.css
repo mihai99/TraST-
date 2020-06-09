@@ -56,8 +56,7 @@
     width: 30px;
 }
 
-.footer-links a:active, .footer-links
-a:focus, .footer-links a:hover {
+.footer-links a:active, .footer-links a:focus, .footer-links a:hover {
     color: #3366cc;
     text-decoration: none;
 }

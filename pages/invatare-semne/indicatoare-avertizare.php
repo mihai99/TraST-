@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
@@ -104,7 +104,8 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/urcare_cu_inclinare_mare.png.webp">
+                    <img alt=""
+                         src="../../images/invatare/semne%20circulatie/avertizare/urcare_cu_inclinare_mare.png.webp">
                     <p>
                         <strong> Urcare cu inclinare mare</strong><br>
                         Se instalează la 100-200 m de începutul sectorului de drum, când panta depăşeşte 7%.
@@ -126,7 +127,8 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/drum_ingustat__dreapta.png.webp">
+                    <img alt=""
+                         src="../../images/invatare/semne%20circulatie/avertizare/drum_ingustat__dreapta.png.webp">
                     <p>
                         <strong> Drum ingustat pe partea dreapta</strong><br>
                         Indicatoarele din imaginile alăturate se amplasează la 100-200 m de locul în care sectorul de
@@ -187,7 +189,8 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/denivelari_limitarea_vitezei.png.webp">
+                    <img alt=""
+                         src="../../images/invatare/semne%20circulatie/avertizare/denivelari_limitarea_vitezei.png.webp">
                     <p>
                         <strong> Denivelare pentru limitarea vitezei</strong><br>
                         Indicatorul rutier se întâlnește în zonele cu școli, grădinițe, treceri pentru pietoni, sectoare
@@ -205,7 +208,8 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/improscare_cu_pietris.png.webp">
+                    <img alt=""
+                         src="../../images/invatare/semne%20circulatie/avertizare/improscare_cu_pietris.png.webp">
                     <p>
                         <strong> Improşcare cu pietriş</strong><br>
                         Se amplasează la 100-200 m de sectorul de drum periculos. Poate fi însoţit de indicatorul
@@ -226,7 +230,8 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/presemnalizare_trecere_pietoni.png.webp">
+                    <img alt=""
+                         src="../../images/invatare/semne%20circulatie/avertizare/presemnalizare_trecere_pietoni.png.webp">
                     <p>
                         <strong> Presemnalizare trecere pietoni</strong><br>
                         Se instalează la 50-200 m de o trecere de pietoni, pe drumurile intens circulate, pe sectoarele
@@ -245,7 +250,8 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/presemnalizare_sens_giratoriu.png.webp">
+                    <img alt=""
+                         src="../../images/invatare/semne%20circulatie/avertizare/presemnalizare_sens_giratoriu.png.webp">
                     <p>
                         <strong> Presemnalizare intersecţie cu sens giratoriu</strong><br>
                         Se amplasează cu 50-200 m înaintea intersecţiilor cu sens giratoriu. La întâlnirea acestui
@@ -269,7 +275,8 @@
                     </p>
                 </div>
                 <div class="inv-container">
-                    <img alt="" src="../../images/invatare/semne%20circulatie/avertizare/circulatie_in_ambele_sensuri.png.webp">
+                    <img alt=""
+                         src="../../images/invatare/semne%20circulatie/avertizare/circulatie_in_ambele_sensuri.png.webp">
                     <p>
                         <strong> Circulaţie în ambele sensuri</strong><br>
                         Indicatorul din imagine este întâlnit la ieşirea de pe un drum public cu sens unic. Are rolul de

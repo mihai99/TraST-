@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ro" dir="ltr">
 
     <head>
         <title>TraST</title>
@@ -75,43 +75,43 @@
                     <ul>
                         <li>
                             <a href="pages/invatare-semne/indicatoare-prioritate.php">
-                                <img alt="" src="images/invatare/semne circulatie/icons/prioritate-icon.png">
+                                <img alt="" src="images/invatare/semne%20circulatie/icons/prioritate-icon.png">
                                 Indicatoare rutiere de prioritate
                             </a>
                         </li>
                         <li>
                             <a href="pages/invatare-semne/indicatoare-interzicere.php">
-                                <img alt="" src="images/invatare/semne circulatie/icons/interzis-icon.png">
+                                <img alt="" src="images/invatare/semne%20circulatie/icons/interzis-icon.png">
                                 Indicatoare de interzicere sau restrictie
                             </a>
                         </li>
                         <li>
                             <a href="pages/invatare-semne/indicatoare-obligare.php">
-                                <img alt="" src="images/invatare/semne circulatie/icons/obligare-icon.png">
+                                <img alt="" src="images/invatare/semne%20circulatie/icons/obligare-icon.png">
                                 Indicatoare rutiere de obligare
                             </a>
                         </li>
                         <li>
                             <a href="pages/invatare-semne/indicatoare-avertizare.php">
-                                <img alt="" src="images/invatare/semne circulatie/icons/avertizare-icon.png">
+                                <img alt="" src="images/invatare/semne%20circulatie/icons/avertizare-icon.png">
                                 Indicatoare rutiere de avertizare
                             </a>
                         </li>
                         <li>
                             <a href="pages/invatare-semne/indicatoare-informare.php">
-                                <img alt="" src="images/invatare/semne circulatie/icons/informare-icon.png">
+                                <img alt="" src="images/invatare/semne%20circulatie/icons/informare-icon.png">
                                 Indicatoare rutiere de informare
                             </a>
                         </li>
                         <li>
                             <a href="pages/invatare-semne/indicatoare-orientare.php">
-                                <img alt="" src="images/invatare/semne circulatie/icons/orientare-icon.png">
+                                <img alt="" src="images/invatare/semne%20circulatie/icons/orientare-icon.png">
                                 Indicatoare rutiere de orientare
                             </a>
                         </li>
                         <li>
                             <a href="pages/invatare-semne/indicatoare-lucrari.php">
-                                <img alt="" src="images/invatare/semne circulatie/icons/lucrari-icon.png">
+                                <img alt="" src="images/invatare/semne%20circulatie/icons/lucrari-icon.png">
                                 Indicatoare semnalizare lucrari pe carosabil
                             </a>
                         </li>
@@ -126,19 +126,16 @@
                         Actualizată 2018</p><br>
                     <span>Actualizată prin:</span>
                     <ul>
-                        <br>
                         <li>
                             <span>Ordonanța de urgență 41/2016 privind stabilirea unor măsuri de simplificare la nivelul
                                 administrației publice centrale și pentru modificarea și completarea unor acte normative
                                 (publ. în M.Of. nr.490 din 30.06.2016)</span>
                         </li>
-                        <br>
                         <li>
                             <span>Legea 93/2016 pentru modificarea art. 33 alin. (2) din Ordonanța de urgență a
                                 Guvernului nr. 195/2002 privind circulația pe drumurile publice (publ. în M.Of. nr.369
                                 din 13.05.2016)</span>
                         </li>
-                        <br>
                     </ul>
                     <img alt="" src="images/invatare/cod_rutier.jpg" id="cod-rutier">
                 </div>
@@ -186,5 +183,4 @@
             include_once 'footer.php';
         ?>
     </body>
-
 </html>
